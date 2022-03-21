@@ -1,0 +1,17 @@
+**/.DS_Store
+_site
+.sass-cache
+.jekyll-cache
+.jekyll-metadata
+vendor
+
+.idea
+*.gem
+.bundle
+.rspec
+.ruby-gemset
+.ruby-version
+Gemfile.lock
+bin
+
+*.mindnode
