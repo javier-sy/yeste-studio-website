@@ -1,10 +1,8 @@
 ---
 layout: page
-title: Política de privacidad
+title: Condiciones generales de acceso y uso del sitio web yeste.studio
 permalink: /condiciones-de-uso
 ---
-# Condiciones generales de acceso y uso del sitio web [yeste.studio](https://yeste.studio)
-
 El sitio web [yeste.studio](https://yeste.studio) es propiedad de Javier Sánchez Yeste
 (en adelante el titular del sitio web) con dirección de correo electrónico
 javier@artmusic.coach, y a través del mismo proporciona información sobre sus actividades.

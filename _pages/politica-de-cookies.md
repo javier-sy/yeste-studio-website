@@ -1,10 +1,8 @@
 ---
 layout: page
-title: Política de privacidad
+title: Política de cookies
 permalink: /politica-de-cookies
 ---
-# Política de cookies
-
 En esta web se recopila y utiliza la información según se indica en la [política de privacidad](/politica-de-privacidad).
 Una de las formas en las que se recopila la información es a través del uso de la tecnología llamada “cookies”.
 En yeste.studio se utilizan varias cookies descritas más abajo.
