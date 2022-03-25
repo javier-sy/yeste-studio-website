@@ -1,11 +1,9 @@
 ---
 layout: page
-title: Política de privacidad
+title: Política de privacidad y adecuación al Reglamento General de Protección de Datos (RGPD)
 permalink: /politica-de-privacidad
 ---
-# Política de privacidad y adecuación al Reglamento General de Protección de Datos (RGPD)
-
-## Política de privacidad
+# Política de privacidad
 
 [yeste.studio](https://yeste.studio) informa a los usuarios del sitio web sobre su política respecto del
 tratamiento y protección de los datos de carácter personal de los usuarios y clientes que puedan ser 
@@ -21,7 +19,7 @@ de Servicios de la Sociedad de la Información y Comercio Electrónico (LSSICE o
 
 El uso de esta web implica la aceptación de esta política de privacidad.
 
-### Principios aplicados a tu información personal
+## Principios aplicados a tu información personal
 
 En el tratamiento de tus datos personales se aplicarán los siguientes principios que se ajustan a las 
 exigencias del nuevo reglamento europeo de protección de datos:
@@ -36,7 +34,7 @@ necesario para los fines del tratamiento.
 adecuada de los datos personales y su confidencialidad. Se toman todas las precauciones necesarias para evitar el 
 acceso no autorizado o uso indebido de los datos de los usuarios por parte de terceros.
 
-## Responsable del tratamiento de tus datos personales
+# Responsable del tratamiento de tus datos personales
 
 - **Identidad**: yeste.studio (Javier Sánchez Yeste)
 - **Correo electrónico**: javier@yeste.studio 
@@ -49,9 +47,9 @@ que nos envíes a través de los formularios de la web recibirán el tratamiento
 Para el tratamiento de datos de los usuarios, implementamos todas las medidas técnicas y organizativas de 
 seguridad establecidas en la legislación vigente.
 
-## Registro de actividades de tratamiento de datos
+# Registro de actividades de tratamiento de datos
 
-### Tratamiento: Usuarios de la web
+## Tratamiento: Usuarios de la web
 
 Finalidad del tratamiento: gestión de la relación con las personas que navegan por la web.
 
@@ -161,7 +159,7 @@ Descripción de las categorías de proveedores y de las categorías de datos per
 - Cuando sea posible, los plazos previstos para la supresión de las diferentes categorías de datos:
     - Los previstos por la legislación fiscal respecto a la prescripción de responsabilidades.
 --->
-## Derechos de los usuarios
+# Derechos de los usuarios
 
 Cualquier persona tiene derecho a obtener confirmación sobre si [yeste.studio](https://yeste.studio)
 está tratando datos personales que le conciernen.
@@ -197,7 +195,7 @@ Los interesados también tendrán derecho a la tutela judicial efectiva y a pres
 la autoridad de control, en este caso, la _Agencia Española de Protección de Datos_, si consideran que el tratamiento 
 de datos personales que le conciernen infringe el Reglamento.
 
-### Ejercicio de los derechos de los usuarios
+## Ejercicio de los derechos de los usuarios
  
 Aquellas personas físicas que hayan facilitado sus datos a través del sitio web [yeste.studio](https://yeste.studio) 
 podrán dirigirse al titular del mismo con el fin de poder ejercitar gratuitamente sus derechos respecto de los 
