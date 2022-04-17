@@ -22,7 +22,7 @@ the programs in a background server.
 The server connects through the connector to Ableton Live or Bitwig Studio 
 sending MIDI messages to your tracks.
 
-Also you cand create tracks, add instruments and effects, etc. from your live coding session in Atom. 
+<!--- Also you cand create tracks, add instruments and effects, etc. from your live coding session in Atom. ---> 
  
 MusaLCE can be found on Musa-DSL website [musa-dsl.org/musalce](https://musa-dsl.org/musalce).
 
