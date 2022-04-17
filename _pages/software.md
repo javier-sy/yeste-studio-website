@@ -1,8 +1,8 @@
 ---
 layout: page
 title: Software
-permalink: /software
-image: /images/software.png
+permalink: software
+image: images/software.png
 ---
 # Musa-DSL
 

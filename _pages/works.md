@@ -1,8 +1,8 @@
 ---
 layout: page
 title: Works
-permalink: /works
-image: /images/works.jpg
+permalink: works
+image: images/works.jpg
 ---
 # Algorithmic Works
 

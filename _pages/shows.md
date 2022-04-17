@@ -1,8 +1,8 @@
 ---
 layout: page
 title: Shows
-permalink: /shows
-image: /images/mixer.jpg
+permalink: shows
+image: images/mixer.jpg
 image_attribution: 'Photo by <a href="https://unsplash.com/@adigold1?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Adi Goldstein</a> on <a href="https://unsplash.com/s/photos/music-studio?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>'
 ---
 

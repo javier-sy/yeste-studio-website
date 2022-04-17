@@ -1,8 +1,8 @@
 ---
 layout: page
 title: Bio
-permalink: /bio
-image: /images/bio.jpg
+permalink: bio
+image: images/bio.jpg
 ---
 
 [yeste.studio](https://yeste.studio) is **Javier Sánchez Yeste** (1974).
