@@ -55,6 +55,7 @@
           name: 'analytics',
           label: 'Analytics',
           description: 'Analytics cookies allow the author of the website to know anonymously how many users visit the page.',
+          recommendedState: true,
           cookies: ['_ga', '_gat', '_gid'],
           onAccept : function(){
             {% if site.data.settings.google-analytics %}
