@@ -15,7 +15,7 @@ Sala Aranyó (Campus UPF Poblenou)
 
 ### El Bosque (2019) 13'38'', adaptación a 15+2 canales
 
-Obra multifocal para conjunto de altavoces. 
+Obra multifocal para conjunto de altavoces.
 
 Espacializadas voces sintéticas, juegos de fase en varios niveles, grabaciones de campo y síntesis granular se disputan el control de la sala en una metáfora sonora sobre el bosque, sus misterios y su futuro incierto. 
 
