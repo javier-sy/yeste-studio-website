@@ -3,7 +3,6 @@ layout: page
 title: Software
 permalink: /software
 image: /images/software.png
-image_attribution: 'Photo by <a href="https://unsplash.com/@emilymorter?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Emily Morter</a> on <a href="https://unsplash.com/s/photos/question?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>'
 ---
 # Musa-DSL
 
