@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Condiciones generales de acceso y uso del sitio web yeste.studio
-permalink: /condiciones-de-uso
+permalink: condiciones-de-uso
 ---
 El sitio web [yeste.studio](https://yeste.studio) es propiedad de Javier Sánchez Yeste
 (en adelante el titular del sitio web) con dirección de correo electrónico

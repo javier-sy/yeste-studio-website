@@ -12,17 +12,17 @@ menu__settings:
     - title: 'Home'
       url: '/'
     - title: 'Works'
-      url: '/works/'
+      url: 'works'
     - title: 'Shows'
-      url: '/shows/'
+      url: 'shows'
     - title: 'Software'
-      url: '/software/'
+      url: 'software'
     - title: 'Bio'
-      url: '/bio/'
+      url: 'bio'
     - title: 'Contact'
-      url: '/contact/'
+      url: 'contact'
 #    - title: 'Blog'
-#      url: '/blog/'
+#      url: 'blog'
 
 
 #-------------------------------
