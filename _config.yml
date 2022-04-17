@@ -2,7 +2,7 @@
 # General Site Settings
 baseurl: "" # the subpath of your site, e.g. /blog
 # url: "https://yeste.studio" # the base hostname & protocol for your site, e.g. http://example.com
-url: "https://javier-sy.github.io/yeste-studio-website/"
+url: "https://javier-sy.github.io/yeste-studio-website"
 #-------------------------------
 # Build Settings
 markdown: kramdown
