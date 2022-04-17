@@ -1,6 +1,6 @@
 ---
 layout: page
-image: /images/home.png
+image: images/home.png
 #title: Home
 ---
 **Welcome to [yeste.studio](/) artistic works website**
