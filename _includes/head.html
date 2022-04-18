@@ -32,7 +32,6 @@
   <script>
     window.dataLayer = window.dataLayer || [];
     function gtag(){dataLayer.push(arguments);}
-    alert("cargado gtag.js");
   </script>
 
   <!-- Ionicons -->
@@ -72,12 +71,10 @@
             description: "Google Analytics"
           }],
           onAccept : function(){
-            alert("cookiecontrol.onAccept");
             gtag('js', new Date());
             gtag('config', '{{ site.data.settings.google-analytics }}');
           },
           onRevoke: function(){
-            alert("cookiecontrol.onRevoke");
             window['ga-disable-{{ site.data.settings.google-analytics }}'] = true;
           }
         }
