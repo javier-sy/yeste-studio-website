@@ -53,7 +53,7 @@
     }
   </script>
 
-  <!-- CookieControl
+  <!-- CookieControl -->
   <script src="https://cc.cdn.civiccomputing.com/9/cookieControl-9.x.min.js"></script>
   <script>
     var config = {
@@ -66,14 +66,18 @@
           description: 'Analytics cookies allow the author of the website to know anonymously how many users visit the page.',
           recommendedState: true,
           lawfulBasis: 'legitimate interest',
+          cookies: ['_ga', '_gid', '_gat', '__utma', '__utmt', '__utmb', '__utmc', '__utmz', '__utmv'],
+          vendors: [{
+            name: "Google",
+            url: "https://policies.google.com/technologies/types?hl=en-US",
+            description: "Google Analytics"
+          }],
           onAccept : function(){
             gtag('js', new Date());
             gtag('config', '{{ site.data.settings.google-analytics }}');
           },
           onRevoke: function(){
             window['ga-disable-{{ site.data.settings.google-analytics }}'] = true;
-            gtag('js', new Date());
-            gtag('config', '{{ site.data.settings.google-analytics }}');
           }
         }
       ],
@@ -84,7 +88,7 @@
 
     CookieControl.load(config);
   </script>
--->
+
   <style>
   {% capture include_to_scssify %}
     {% include main.scss %}
