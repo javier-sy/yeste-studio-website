@@ -8,9 +8,13 @@ image: images/works.jpg
 
 Sound works created mostly with MusaDSL and rendered with Max/MSP, Supercollider, Ableton Live and Bitwig Studio.
 
-## Espiral (2022?)
+## Espiral (2022)
 
-Work in Progress 
+Stereo binuaural reduction of the original work for 16 channels premiered in _Universidad del País Vasco_ (2022-11-23).
+
+Composed with MusaDSL. Rendered with Spitfire BBC Symphonic Orchestra on Bitwig Studio and processed with Max/MSP.
+
+{% soundcloud 1394013898 %}
 
 ## El Bosque (2019)
 
