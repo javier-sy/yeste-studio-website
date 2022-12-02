@@ -6,6 +6,47 @@ image: images/mixer.jpg
 image_attribution: 'Photo by <a href="https://unsplash.com/@adigold1?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Adi Goldstein</a> on <a href="https://unsplash.com/s/photos/music-studio?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>'
 ---
 
+
+# Universidad del País Vasco, Leioa (Bizkaia), 2022-11-23
+
+## Estreno de Espiral, conferencia y charla
+
+![](/images/2022-11-23_Euskera.jpg)
+
+Facultad de Bellas Artes
+
+### Espiral (2022), variante 6, 16'50'', estreno original en 16 canales
+
+Obra generativa para orquesta virtual de 48 instrumentos con presentación multifocal. Variante nº 6 renderizada para 16 canales con distribución en cúpula.
+
+Las dimensiones del espacio tridimensional en que se ubica una espiral son proyectadas sobre los parámetros de generación algorítmica de una secuencia de espirales distorsionadas en el tiempo y el espacio. Estas, a su vez, determinan la interpretación que realizan los instrumentos de una orquesta virtual de 48 instrumentos.
+
+La percepción del espacio en que se reproduce la pieza también experimenta cambios a través de la manipulación de aquello que relaciona el espacio y el sonido: la reverberación.
+
+Compuesta con MusaDSL. Renderizada con Spitfire BBC Symphonic Orchestra sobre Bitwig Studio y procesada con Max/MSP.
+
+### Conferencia y charla sobre composición algorítmica y espacialización con Mikel Arce
+
+![](/images/2022-11-23_charla.jpeg)
+
+# Barcelona, 2022-11-19
+
+##  Sessió Improvisació Electroacústica
+
+![](/images/2022-11-19_Impro-electroacustica_web.jpeg)
+
+L'Antic Forn de Vallcarca
+
+### Espiral (2022), variante 6, 16'50'', estreno versión reducida a 8 canales
+
+Obra generativa para orquesta virtual de 48 instrumentos con presentación multifocal. Variante nº 6 renderizada para 8 canales con distribución en círculo.
+
+Las dimensiones del espacio tridimensional en que se ubica una espiral son proyectadas sobre los parámetros de generación algorítmica de una secuencia de espirales distorsionadas en el tiempo y el espacio. Estas, a su vez, determinan la interpretación que realizan los instrumentos de una orquesta virtual de 48 instrumentos.
+
+La percepción del espacio en que se reproduce la pieza también experimenta cambios a través de la manipulación de aquello que relaciona el espacio y el sonido: la reverberación.
+
+Compuesta con MusaDSL. Renderizada con Spitfire BBC Symphonic Orchestra sobre Bitwig Studio y procesada con Max/MSP.
+
 # Barcelona, 2020-09-30
 
 ## El Sindicato de Altavoces: Obras de Graus, Lewin-Richter, Rossinyol y Sánchez
