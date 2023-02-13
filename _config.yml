@@ -5,6 +5,7 @@
 url: "https://yeste.studio/" # the base hostname & protocol for your site, e.g. http://example.com
 # url: "https://javier-sy.github.io"
 #-------------------------------
+
 # Build Settings
 markdown: kramdown
 permalink: /:title
@@ -35,3 +36,13 @@ exclude:
 sass:
   sass_dir: _sass
   style: compressed
+
+# Necesario para el plugin de jekyll->github pages
+asciidoc: {}
+asciidoctor:
+  base_dir: :docdir
+  safe: unsafe
+  attributes:
+    - idseparator=_
+    - source-highlighter=coderay
+    - icons=font
