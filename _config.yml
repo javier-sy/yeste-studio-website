@@ -36,13 +36,3 @@ exclude:
 sass:
   sass_dir: _sass
   style: compressed
-
-# Necesario para el plugin de jekyll->github pages
-asciidoc: {}
-asciidoctor:
-  base_dir: :docdir
-  safe: unsafe
-  attributes:
-    - idseparator=_
-    - source-highlighter=coderay
-    - icons=font
