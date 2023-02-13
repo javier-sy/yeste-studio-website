@@ -8,11 +8,30 @@ image: images/works.jpg
 
 Sound works created mostly with MusaDSL and rendered with Max/MSP, Supercollider, Ableton Live and Bitwig Studio.
 
+## An Elevator Door's 16 Selected Seconds (2018, remixed for stereo on 2013)
+
+New remixed stereo version of the original 12 channels 'An Elevator Door's 16 Selected Seconds' that was premiered
+as a shortened version (An Elevator Door's 6 Selected Seconds) in Hangar, Barcelona, in 2018.
+
+Open the door. Open the inner doors. Close the door. Close the inner doors. Press the button. Going up. Reverse repeat.
+16 seconds of sound events traveled, millisecond to millisecond, through microscopic samples with durations between 0.1ms and 84ms.
+The evolving loop keeps the sound in the frontier between the rhythmic pulses, the continous tone and a draft of perceptual event.
+Harmonies generated through the reproduction of microloops with sample-rates of harmonic multiples.
+Exploration of the timbre-harmony binomial.
+
+Created with MusaDSL, Max/MSP, Ableton Live and remixed in Bitwig Studio.
+
+Listen with headphones!
+
+{% soundcloud  1440757840 %}
+
 ## Espiral (2022)
 
 Stereo binuaural reduction of the original work for 16 channels premiered in _Universidad del País Vasco_ (2022-11-23).
 
 Composed with MusaDSL. Rendered with Spitfire BBC Symphonic Orchestra on Bitwig Studio and processed with Max/MSP.
+
+Listen with headphones!
 
 {% soundcloud 1394013898 %}
 
