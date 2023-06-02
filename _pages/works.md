@@ -8,7 +8,7 @@ image: images/works.jpg
 
 Sound works created mostly with MusaDSL and rendered with Max/MSP, Supercollider, Ableton Live and Bitwig Studio.
 
-## An Elevator Door's 16 Selected Seconds (2018, remixed for stereo on 2013)
+## An Elevator Door's 16 Selected Seconds (2018, remixed for stereo on 2023)
 
 New remixed stereo version of the original 12 channels 'An Elevator Door's 16 Selected Seconds' that was premiered
 as a shortened version (An Elevator Door's 6 Selected Seconds) in Hangar, Barcelona, in 2018.
