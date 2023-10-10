@@ -38,7 +38,7 @@ The Atom editor plugin source code can be found in [github.com/javier-sy/musa-ds
 
 Open source suite of several components to add MIDI communications capabilities to Musa-DSL that also can be used in other Ruby projects independently of Musa-DSL.
 
-This suite is a fork of of [Ari Russo](https://github.com/arirusso)'s libraries with some modifications and optimizations.
+This suite is a fork of [Ari Russo](https://github.com/arirusso)'s libraries with some modifications and optimizations.
 
 | Library | Function | 
 | --- | --- |
