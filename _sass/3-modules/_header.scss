@@ -107,12 +107,12 @@
     cursor: pointer;
 
     &:hover {
-      .ion-md-close {
+      ion-icon {
         transform: rotate(90deg);
       }
     }
 
-    .ion-md-close {
+    ion-icon {
       transition: $global-transition;
     }
   }

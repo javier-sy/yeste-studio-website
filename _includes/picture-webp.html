@@ -1,0 +1,17 @@
+<!--
+  Simple WebP image with fallback (no plugin required)
+
+  Usage:
+  {% include picture-webp.html
+    src="/images/photo.jpg"
+    alt="Description"
+    class="my-class"
+  %}
+
+  Note: You need to manually create .webp versions of your images
+-->
+{% assign webp_src = include.src | replace: '.jpg', '.webp' | replace: '.png', '.webp' %}
+<picture>
+  <source srcset="{{ webp_src }}" type="image/webp">
+  <img src="{{ include.src }}" alt="{{ include.alt }}" {% if include.class %}class="{{ include.class }}"{% endif %} loading="lazy">
+</picture>

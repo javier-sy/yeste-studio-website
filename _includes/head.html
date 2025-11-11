@@ -21,7 +21,8 @@
   <meta property="og:image" content="{{ page.image | absolute_url }}">
 
   <!-- Fonts -->
-  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 
   <link rel="preload" href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Josefin+Sans:wght@700&display=swap" as="style">
 
@@ -35,9 +36,8 @@
   </script>
 
   <!-- Ionicons -->
-  <link rel="preload" href="https://unpkg.com/ionicons@4.2.2/dist/css/ionicons.min.css" as="style">
-
-  <link href="https://unpkg.com/ionicons@4.2.2/dist/css/ionicons.min.css" rel="stylesheet">
+  <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
 
   <script>
     if (localStorage.getItem("theme") === "dark") {
@@ -52,7 +52,7 @@
   </script>
 
   <!-- CookieControl -->
-  <script src="https://cc.cdn.civiccomputing.com/9/cookieControl-9.x.min.js"></script>
+  <script src="https://cc.cdn.civiccomputing.com/9/cookieControl-9.10.min.js"></script>
   <script>
     var config = {
       apiKey: '3abee8f9abcb4e26a00bb948dafeaae580f09b8c',
