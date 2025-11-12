@@ -1,0 +1,360 @@
+---
+layout: default
+---
+
+<div class="container">
+  <div class="row">
+    <div class="col col-12">
+
+      <div class="music-page">
+
+        <!-- Header -->
+        <div class="music-header">
+          <h1 class="music-title">{{ page.title }}</h1>
+
+          {% if page.composer %}
+          <p class="music-composer">{{ page.composer }}</p>
+          {% endif %}
+
+          {% if page.year %}
+          <p class="music-meta">
+            <span class="music-year">{{ page.year }}</span>
+            {% if page.duration %}
+            <span class="music-duration"> • {{ page.duration }}</span>
+            {% endif %}
+          </p>
+          {% endif %}
+        </div>
+
+        <!-- Artwork -->
+        {% if page.image_file %}
+        <div class="music-artwork">
+          <img src="{{ page.image_file | relative_url }}" alt="{{ page.title }}" loading="lazy">
+        </div>
+        {% endif %}
+
+        <!-- Audio Player -->
+        <div class="music-player">
+          <div id="waveform"></div>
+          <div class="music-controls">
+            <button id="playPauseBtn" class="control-btn" aria-label="Play/Pause">
+              <ion-icon name="play" class="play-icon"></ion-icon>
+              <ion-icon name="pause" class="pause-icon" style="display: none;"></ion-icon>
+            </button>
+            <div class="time-display">
+              <span id="currentTime">0:00</span>
+              <span class="time-separator">/</span>
+              <span id="totalTime">0:00</span>
+            </div>
+            <div class="volume-control">
+              <ion-icon name="volume-medium"></ion-icon>
+              <input type="range" id="volumeSlider" min="0" max="100" value="75" aria-label="Volume">
+            </div>
+          </div>
+        </div>
+
+        <!-- Metadata -->
+        {% if page.techniques %}
+        <div class="music-techniques">
+          <h3>Técnicas</h3>
+          <ul class="techniques-list">
+            {% for technique in page.techniques %}
+            <li>{{ technique }}</li>
+            {% endfor %}
+          </ul>
+        </div>
+        {% endif %}
+
+        <!-- Description -->
+<!--
+        {% if page.description %}
+        <div class="music-description">
+          <h3>Descripción</h3>
+          <p>{{ page.description }}</p>
+        </div>
+        {% endif %}
+-->
+        
+        <!-- Content -->
+        <div class="music-content">
+          {{ content }}
+        </div>
+
+      </div>
+
+    </div>
+  </div>
+</div>
+
+<!-- Wavesurfer.js -->
+<script src="https://unpkg.com/wavesurfer.js@7"></script>
+
+<script>
+  // Initialize Wavesurfer
+  const wavesurfer = WaveSurfer.create({
+    container: '#waveform',
+    waveColor: 'var(--text-color)',
+    progressColor: 'var(--brand-color)',
+    cursorColor: 'var(--brand-color)',
+    barWidth: 2,
+    barRadius: 3,
+    cursorWidth: 1,
+    height: 80,
+    barGap: 2,
+    responsive: true,
+    normalize: true
+  });
+
+  // Load audio file
+  wavesurfer.load('{{ page.audio_file | relative_url }}');
+
+  // Play/Pause button
+  const playPauseBtn = document.getElementById('playPauseBtn');
+  const playIcon = playPauseBtn.querySelector('.play-icon');
+  const pauseIcon = playPauseBtn.querySelector('.pause-icon');
+
+  playPauseBtn.addEventListener('click', () => {
+    wavesurfer.playPause();
+  });
+
+  wavesurfer.on('play', () => {
+    playIcon.style.display = 'none';
+    pauseIcon.style.display = 'block';
+  });
+
+  wavesurfer.on('pause', () => {
+    playIcon.style.display = 'block';
+    pauseIcon.style.display = 'none';
+  });
+
+  // Volume control
+  const volumeSlider = document.getElementById('volumeSlider');
+  volumeSlider.addEventListener('input', (e) => {
+    wavesurfer.setVolume(e.target.value / 100);
+  });
+
+  // Time display
+  const currentTimeEl = document.getElementById('currentTime');
+  const totalTimeEl = document.getElementById('totalTime');
+
+  function formatTime(seconds) {
+    const minutes = Math.floor(seconds / 60);
+    const secs = Math.floor(seconds % 60);
+    return `${minutes}:${secs.toString().padStart(2, '0')}`;
+  }
+
+  wavesurfer.on('ready', () => {
+    totalTimeEl.textContent = formatTime(wavesurfer.getDuration());
+    // Set initial volume
+    wavesurfer.setVolume(0.75);
+  });
+
+  wavesurfer.on('audioprocess', () => {
+    currentTimeEl.textContent = formatTime(wavesurfer.getCurrentTime());
+  });
+
+  wavesurfer.on('seek', () => {
+    currentTimeEl.textContent = formatTime(wavesurfer.getCurrentTime());
+  });
+</script>
+
+<style>
+.music-page {
+  max-width: 800px;
+  margin: 60px auto;
+}
+
+.music-header {
+  margin-bottom: 40px;
+  text-align: center;
+}
+
+.music-title {
+  font-family: var(--heading-font-family);
+  font-size: 36px;
+  font-weight: 700;
+  color: var(--heading-font-color);
+  margin-bottom: 10px;
+}
+
+.music-composer {
+  font-size: 18px;
+  color: var(--text-color);
+  margin-bottom: 5px;
+}
+
+.music-meta {
+  font-size: 14px;
+  color: var(--text-color);
+  opacity: 0.7;
+}
+
+.music-artwork {
+  margin-bottom: 40px;
+  text-align: center;
+}
+
+.music-artwork img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.music-player {
+  background: var(--background-alt-color);
+  border-radius: 8px;
+  padding: 30px;
+  margin-bottom: 40px;
+}
+
+#waveform {
+  margin-bottom: 20px;
+}
+
+.music-controls {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.control-btn {
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  background: var(--brand-color);
+  border: none;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: transform 0.2s, opacity 0.2s;
+  flex-shrink: 0;
+}
+
+.control-btn:hover {
+  transform: scale(1.05);
+  opacity: 0.9;
+}
+
+.control-btn ion-icon {
+  font-size: 24px;
+}
+
+.time-display {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  font-size: 14px;
+  color: var(--text-color);
+  font-variant-numeric: tabular-nums;
+  min-width: 100px;
+}
+
+.time-separator {
+  opacity: 0.5;
+}
+
+.volume-control {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-left: auto;
+}
+
+.volume-control ion-icon {
+  font-size: 20px;
+  color: var(--text-color);
+}
+
+#volumeSlider {
+  width: 100px;
+  height: 4px;
+  -webkit-appearance: none;
+  appearance: none;
+  background: var(--text-color);
+  opacity: 0.3;
+  border-radius: 2px;
+  outline: none;
+  transition: opacity 0.2s;
+}
+
+#volumeSlider:hover {
+  opacity: 0.5;
+}
+
+#volumeSlider::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 12px;
+  height: 12px;
+  background: var(--brand-color);
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+#volumeSlider::-moz-range-thumb {
+  width: 12px;
+  height: 12px;
+  background: var(--brand-color);
+  border-radius: 50%;
+  cursor: pointer;
+  border: none;
+}
+
+.music-techniques,
+.music-description {
+  margin-bottom: 30px;
+}
+
+.music-techniques h3,
+.music-description h3 {
+  font-family: var(--heading-font-family);
+  font-size: 20px;
+  font-weight: 700;
+  color: var(--heading-font-color);
+  margin-bottom: 15px;
+}
+
+.techniques-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.techniques-list li {
+  padding: 8px 0;
+  border-bottom: 1px solid var(--background-alt-color);
+  color: var(--text-color);
+}
+
+.techniques-list li:last-child {
+  border-bottom: none;
+}
+
+.music-description p {
+  color: var(--text-color);
+  line-height: 1.7;
+}
+
+.music-content {
+  margin-top: 40px;
+  color: var(--text-color);
+  line-height: 1.7;
+}
+
+@media only screen and (max-width: 768px) {
+  .music-player {
+    padding: 20px;
+  }
+
+  .volume-control {
+    display: none;
+  }
+
+  .music-title {
+    font-size: 28px;
+  }
+}
+</style>

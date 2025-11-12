@@ -271,3 +271,122 @@
     display: none;
   }
 }
+
+/* Submenu */
+.has-submenu {
+  position: relative;
+
+  .nav__link {
+    display: flex;
+    align-items: center;
+    gap: 4px;
+  }
+
+  .submenu-icon {
+    font-size: 14px;
+    transition: transform 0.3s ease;
+  }
+
+  // Desktop: hover behavior
+  @media only screen and (min-width: $desktop + 1) {
+    &:hover {
+      .submenu {
+        opacity: 1;
+        visibility: visible;
+        transform: translateY(0);
+      }
+
+      .submenu-icon {
+        transform: rotate(180deg);
+      }
+    }
+  }
+
+  // Mobile: click toggle behavior
+  @media only screen and (max-width: $desktop) {
+    &.submenu-open {
+      .submenu {
+        max-height: 300px;
+        opacity: 1;
+      }
+
+      .submenu-icon {
+        transform: rotate(180deg);
+      }
+    }
+  }
+}
+
+.submenu {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+
+  // Desktop styles
+  @media only screen and (min-width: $desktop + 1) {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    min-width: 200px;
+    padding: 12px 0;
+    margin-top: 8px;
+    background: var(--background-alt-color);
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(-10px);
+    transition: all 0.3s ease;
+    z-index: 100;
+  }
+
+  // Mobile styles
+  @media only screen and (max-width: $desktop) {
+    max-height: 0;
+    opacity: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease, opacity 0.3s ease;
+    padding-left: 20px;
+  }
+}
+
+.submenu__item {
+  margin: 0;
+
+  @media only screen and (min-width: $desktop + 1) {
+    &:not(:last-child) {
+      border-bottom: 1px solid var(--background-color);
+    }
+  }
+
+  @media only screen and (max-width: $desktop) {
+    margin: 8px 0;
+  }
+}
+
+.submenu__link {
+  display: block;
+  padding: 12px 20px;
+  font-size: 15px;
+  font-weight: 500;
+  color: var(--text-color);
+  transition: all 0.25s ease;
+
+  &:hover {
+    color: var(--brand-color);
+    background: var(--background-color);
+  }
+
+  &.submenu__link--current {
+    color: var(--brand-color);
+  }
+
+  @media only screen and (max-width: $desktop) {
+    padding: 8px 0;
+    font-size: 18px;
+
+    &:hover {
+      background: transparent;
+    }
+  }
+}
