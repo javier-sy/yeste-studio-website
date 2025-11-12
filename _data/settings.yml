@@ -17,6 +17,13 @@ menu__settings:
       url: 'shows'
     - title: 'Software'
       url: 'software'
+    - title: 'PhD'
+      url: '#'
+      submenu:
+        - title: 'Tesis doctoral'
+          url: 'phd/thesis'
+        - title: 'Materiales de audio'
+          url: 'phd/materials'
     - title: 'Bio'
       url: 'bio'
     - title: 'Contact'
