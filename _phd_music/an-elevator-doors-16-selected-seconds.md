@@ -7,10 +7,11 @@ year: 2023
 techniques:
   - "Field recording"
   - "Composición algorítmica"
-  - "Expansión temporal (zoom ~x100)"
+  - "Expansión temporal"
   - "Análisis espectral"
   - "Síntesis granular"
-  - "MusaDSL + Max/MSP"
+  - "MusaDSL"
+  - "Max/MSP"
 audio_file: "/audio/phd/an-elevator-doors-16-selected-seconds.mp3"
 image_file: "/images/phd/an-elevator-doors-16-selected-seconds.jpg"
 description: "Microscopio sonoro: 19 segundos del sonido de una puerta de ascensor expandidos a 29 minutos mediante zoom temporal y espectral."
