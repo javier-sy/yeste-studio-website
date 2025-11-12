@@ -63,12 +63,11 @@ layout: default
         <!-- Metadata -->
         {% if page.techniques %}
         <div class="music-techniques">
-          <h3>Técnicas</h3>
-          <ul class="techniques-list">
+          <div class="techniques-chips">
             {% for technique in page.techniques %}
-            <li>{{ technique }}</li>
+            <span class="technique-chip">{{ technique }}</span>
             {% endfor %}
-          </ul>
+          </div>
         </div>
         {% endif %}
 
@@ -414,20 +413,40 @@ layout: default
   margin-bottom: 15px;
 }
 
-.techniques-list {
-  list-style: none;
-  padding: 0;
-  margin: 0;
+.techniques-chips {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
 }
 
-.techniques-list li {
-  padding: 8px 0;
-  border-bottom: 1px solid var(--background-alt-color);
-  color: var(--text-color);
+.technique-chip {
+  display: inline-block;
+  padding: 8px 16px;
+  background: #f0f0f0;
+  border: 1px solid #d0d0d0;
+  border-radius: 20px;
+  font-size: 14px;
+  color: #333333;
+  font-weight: 500;
+  transition: background 0.2s ease, border-color 0.2s ease;
 }
 
-.techniques-list li:last-child {
-  border-bottom: none;
+.technique-chip:hover {
+  background: #e0e0e0;
+  border-color: #b0b0b0;
+}
+
+@media (prefers-color-scheme: dark) {
+  .technique-chip {
+    background: #2a2a2a;
+    border-color: #4a4a4a;
+    color: #e0e0e0;
+  }
+
+  .technique-chip:hover {
+    background: #3a3a3a;
+    border-color: #5a5a5a;
+  }
 }
 
 .music-description p {
