@@ -35,9 +35,16 @@ layout: default
 
         <!-- Audio Player -->
         <div class="music-player">
+          <!-- Loading Indicator -->
+          <div id="loadingIndicator" class="loading-indicator">
+            <div class="loading-text">Cargando audio... <span id="loadingPercentage">0%</span></div>
+            <div class="loading-bar">
+              <div id="loadingProgress" class="loading-progress"></div>
+            </div>
+          </div>
           <div id="waveform"></div>
           <div class="music-controls">
-            <button id="playPauseBtn" class="control-btn" aria-label="Play/Pause">
+            <button id="playPauseBtn" class="control-btn" aria-label="Play/Pause" disabled>
               <ion-icon name="play" class="play-icon"></ion-icon>
               <ion-icon name="pause" class="pause-icon" style="display: none;"></ion-icon>
             </button>
@@ -108,6 +115,50 @@ layout: default
   // Load audio file
   wavesurfer.load('{{ page.audio_file | relative_url }}');
 
+  // Loading indicator elements
+  const loadingIndicator = document.getElementById('loadingIndicator');
+  const loadingPercentage = document.getElementById('loadingPercentage');
+  const loadingProgress = document.getElementById('loadingProgress');
+  const loadingText = loadingIndicator.querySelector('.loading-text');
+  const loadingBar = loadingIndicator.querySelector('.loading-bar');
+
+  // Handle loading progress (download phase)
+  wavesurfer.on('loading', (percent) => {
+    loadingPercentage.textContent = `${Math.round(percent)}%`;
+    loadingProgress.style.width = `${percent}%`;
+
+    // When download completes, switch to processing state
+    if (percent >= 100) {
+      setTimeout(() => {
+        loadingText.innerHTML = 'Procesando audio...';
+        loadingBar.classList.add('processing');
+        loadingProgress.style.width = '30%';
+      }, 100);
+    }
+  });
+
+  // Handle ready state
+  wavesurfer.on('ready', () => {
+    // Hide loading indicator
+    loadingIndicator.style.opacity = '0';
+    setTimeout(() => {
+      loadingIndicator.style.display = 'none';
+      // Reset for next load (if any)
+      loadingBar.classList.remove('processing');
+      loadingText.innerHTML = 'Cargando audio... <span id="loadingPercentage">0%</span>';
+      loadingProgress.style.width = '0%';
+    }, 300);
+
+    // Enable play button
+    playPauseBtn.disabled = false;
+    playPauseBtn.style.opacity = '1';
+    playPauseBtn.style.cursor = 'pointer';
+
+    // Set total time and volume
+    totalTimeEl.textContent = formatTime(wavesurfer.getDuration());
+    wavesurfer.setVolume(0.75);
+  });
+
   // Play/Pause button
   const playPauseBtn = document.getElementById('playPauseBtn');
   const playIcon = playPauseBtn.querySelector('.play-icon');
@@ -142,12 +193,6 @@ layout: default
     const secs = Math.floor(seconds % 60);
     return `${minutes}:${secs.toString().padStart(2, '0')}`;
   }
-
-  wavesurfer.on('ready', () => {
-    totalTimeEl.textContent = formatTime(wavesurfer.getDuration());
-    // Set initial volume
-    wavesurfer.setVolume(0.75);
-  });
 
   wavesurfer.on('audioprocess', () => {
     currentTimeEl.textContent = formatTime(wavesurfer.getCurrentTime());
@@ -208,6 +253,53 @@ layout: default
   margin-bottom: 40px;
 }
 
+.loading-indicator {
+  text-align: center;
+  padding: 20px 0;
+  transition: opacity 0.3s ease;
+}
+
+.loading-text {
+  font-size: 14px;
+  color: var(--text-color);
+  margin-bottom: 10px;
+  font-weight: 500;
+}
+
+.loading-bar {
+  width: 100%;
+  height: 6px;
+  background: rgba(0, 0, 0, 0.1);
+  border-radius: 3px;
+  overflow: hidden;
+  margin-bottom: 20px;
+}
+
+.loading-progress {
+  height: 100%;
+  background: var(--brand-color);
+  width: 0%;
+  transition: width 0.3s ease;
+  border-radius: 3px;
+}
+
+.loading-bar.processing .loading-progress {
+  width: 30%;
+  animation: indeterminate 1.5s ease-in-out infinite;
+}
+
+@keyframes indeterminate {
+  0% {
+    transform: translateX(-100%);
+  }
+  50% {
+    transform: translateX(350%);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
+
 #waveform {
   margin-bottom: 20px;
 }
@@ -233,7 +325,12 @@ layout: default
   flex-shrink: 0;
 }
 
-.control-btn:hover {
+.control-btn:disabled {
+  opacity: 0.4;
+  cursor: not-allowed;
+}
+
+.control-btn:not(:disabled):hover {
   transform: scale(1.05);
   opacity: 0.9;
 }
