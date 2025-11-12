@@ -93,7 +93,6 @@ Para la creación de *An Elevator Door's 16 Selected Seconds*, utilicé la versi
 - Texturas microscópicas del roce de piezas metálicas
 - Resonancias complejas de los mecanismos mecánicos del ascensor ampliados en la cabina
 - Transformaciones espectrales graduales
-- Paisajes sonoros emergentes de lo cotidiano
 
 
 ---
