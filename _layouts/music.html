@@ -156,6 +156,12 @@ layout: default
     // Set total time and volume
     totalTimeEl.textContent = formatTime(wavesurfer.getDuration());
     wavesurfer.setVolume(0.75);
+
+    // Auto-play when ready (handle autoplay policy)
+    wavesurfer.play().catch((error) => {
+      console.log('Autoplay bloqueado por el navegador:', error);
+      // El usuario deberá hacer clic en play manualmente
+    });
   });
 
   // Play/Pause button

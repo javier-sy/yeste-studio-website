@@ -5,7 +5,9 @@ composer: "Javier Sánchez Yeste"
 duration: "24:44"
 year: 2024
 techniques:
-  - "MusaDSL, Ableton Live, Spitfire BBC Symphonic Orchestra Pro"
+  - "MusaDSL"
+  - "Ableton Live"
+  - "Spitfire BBC Symphonic Orchestra Pro"
   - "Composición algorítmica"
   - "Generación de espirales 3D"
   - "Visualización en tiempo real"
