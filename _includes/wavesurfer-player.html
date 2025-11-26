@@ -1,0 +1,172 @@
+<!--
+  Wavesurfer Player Include
+  Parameters:
+    - audio_file: Path to the audio file (required)
+    - image_file: Path to the artwork image (optional)
+    - title: Title for accessibility (optional)
+    - player_id: Unique ID for this player instance (required)
+-->
+
+{% assign pid = include.player_id %}
+
+<div class="inline-player" id="player-container-{{ pid }}">
+
+  {% if include.image_file %}
+  <div class="inline-player-artwork">
+    <img src="{{ include.image_file | relative_url }}" alt="{{ include.title | default: 'Artwork' }}" loading="lazy">
+  </div>
+  {% endif %}
+
+  <div class="inline-player-content">
+    <!-- Loading Indicator -->
+    <div id="loading-{{ pid }}" class="loading-indicator">
+      <div class="loading-text">Cargando audio... <span class="loading-percentage">0%</span></div>
+      <div class="loading-bar">
+        <div class="loading-progress"></div>
+      </div>
+    </div>
+
+    <!-- Waveform container -->
+    <div id="waveform-{{ pid }}" class="waveform-container"></div>
+
+    <!-- Controls -->
+    <div class="inline-player-controls">
+      <button class="control-btn play-pause-btn" data-player="{{ pid }}" aria-label="Play/Pause" disabled>
+        <ion-icon name="play" class="play-icon"></ion-icon>
+        <ion-icon name="pause" class="pause-icon" style="display: none;"></ion-icon>
+      </button>
+      <div class="time-display">
+        <span class="current-time">0:00</span>
+        <span class="time-separator">/</span>
+        <span class="total-time">0:00</span>
+      </div>
+      <div class="volume-control">
+        <ion-icon name="volume-medium"></ion-icon>
+        <input type="range" class="volume-slider" min="0" max="100" value="75" aria-label="Volume">
+      </div>
+    </div>
+  </div>
+</div>
+
+<script>
+(function() {
+  const playerId = '{{ pid }}';
+  const audioFile = '{{ include.audio_file | relative_url }}';
+
+  // Wait for WaveSurfer to be available
+  function initPlayer() {
+    if (typeof WaveSurfer === 'undefined') {
+      setTimeout(initPlayer, 100);
+      return;
+    }
+
+    const container = document.getElementById('player-container-' + playerId);
+    const waveformEl = document.getElementById('waveform-' + playerId);
+    const loadingEl = document.getElementById('loading-' + playerId);
+    const playPauseBtn = container.querySelector('.play-pause-btn');
+    const playIcon = playPauseBtn.querySelector('.play-icon');
+    const pauseIcon = playPauseBtn.querySelector('.pause-icon');
+    const currentTimeEl = container.querySelector('.current-time');
+    const totalTimeEl = container.querySelector('.total-time');
+    const volumeSlider = container.querySelector('.volume-slider');
+    const loadingProgress = loadingEl.querySelector('.loading-progress');
+    const loadingPercentage = loadingEl.querySelector('.loading-percentage');
+    const loadingText = loadingEl.querySelector('.loading-text');
+    const loadingBar = loadingEl.querySelector('.loading-bar');
+
+    const wavesurfer = WaveSurfer.create({
+      container: waveformEl,
+      waveColor: 'var(--text-color)',
+      progressColor: 'var(--brand-color)',
+      cursorColor: 'var(--brand-color)',
+      barWidth: 2,
+      barRadius: 3,
+      cursorWidth: 1,
+      height: 60,
+      barGap: 2,
+      responsive: true,
+      normalize: true
+    });
+
+    wavesurfer.load(audioFile);
+
+    // Loading progress
+    wavesurfer.on('loading', function(percent) {
+      loadingPercentage.textContent = Math.round(percent) + '%';
+      loadingProgress.style.width = percent + '%';
+
+      if (percent >= 100) {
+        setTimeout(function() {
+          loadingText.innerHTML = 'Procesando audio...';
+          loadingBar.classList.add('processing');
+          loadingProgress.style.width = '30%';
+        }, 100);
+      }
+    });
+
+    // Ready
+    wavesurfer.on('ready', function() {
+      loadingEl.style.opacity = '0';
+      setTimeout(function() {
+        loadingEl.style.display = 'none';
+      }, 300);
+
+      playPauseBtn.disabled = false;
+      playPauseBtn.style.opacity = '1';
+      playPauseBtn.style.cursor = 'pointer';
+      totalTimeEl.textContent = formatTime(wavesurfer.getDuration());
+      wavesurfer.setVolume(0.75);
+    });
+
+    // Play/Pause
+    playPauseBtn.addEventListener('click', function() {
+      wavesurfer.playPause();
+    });
+
+    wavesurfer.on('play', function() {
+      playIcon.style.display = 'none';
+      pauseIcon.style.display = 'block';
+      // Pause other players
+      if (window.activeWavesurfer && window.activeWavesurfer !== wavesurfer) {
+        window.activeWavesurfer.pause();
+      }
+      window.activeWavesurfer = wavesurfer;
+    });
+
+    wavesurfer.on('pause', function() {
+      playIcon.style.display = 'block';
+      pauseIcon.style.display = 'none';
+    });
+
+    // Volume
+    volumeSlider.addEventListener('input', function(e) {
+      wavesurfer.setVolume(e.target.value / 100);
+    });
+
+    // Time display
+    wavesurfer.on('audioprocess', function() {
+      currentTimeEl.textContent = formatTime(wavesurfer.getCurrentTime());
+    });
+
+    wavesurfer.on('seek', function() {
+      currentTimeEl.textContent = formatTime(wavesurfer.getCurrentTime());
+    });
+
+    function formatTime(seconds) {
+      const minutes = Math.floor(seconds / 60);
+      const secs = Math.floor(seconds % 60);
+      return minutes + ':' + secs.toString().padStart(2, '0');
+    }
+
+    // Store reference
+    container.wavesurferInstance = wavesurfer;
+  }
+
+  // Initialize when DOM is ready
+  if (document.readyState === 'loading') {
+    document.addEventListener('DOMContentLoaded', initPlayer);
+  } else {
+    initPlayer();
+  }
+})();
+</script>
