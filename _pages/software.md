@@ -20,11 +20,11 @@ Utilizo MusaDSL en diversas de mis obras, como *Espiral*, *El Bosque*, *Piezoref
 - **Secuenciador avanzado** con precisión de microsegundos para estructuras polirrítmicas y politemporales
 - Múltiples fuentes de reloj (interno, MIDI, externo)
 - **Herramientas generativas**: cadenas de Markov, Variatio, Rules, GenerativeGrammar y algoritmos genéticos Darwin
-- **Series** para generar secuencias de notas, duraciones, velocidades y cualquier parámetro musical
+- **Series** para generar secuencias de notas, duraciones, velocidades y cualquier parámetro sonoro o musical
 - Sistema de notación textual **Neumalang** con soporte para grados de escala
 - Transcripción a MIDI y MusicXML con expansión de ornamentos
 - Soporte completo de **escalas, modos y afinaciones** (temperamento igual y afinación justa)
-- Operaciones matriciales para transformación de estructuras musicales
+- Operaciones matriciales para transformación de estructuras sonoras y musicales
 - **Entorno de live coding** con integración para VSCode, Bitwig Studio y Ableton Live
 
 ## Licencia
