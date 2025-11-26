@@ -13,7 +13,7 @@ MusaDSL separa la lógica compositiva del renderizado de audio, permitiendo crea
 
 Utilizo MusaDSL en diversas de mis obras, como *Espiral*, *El Bosque*, *Piezoreflections* o el *Estudio Fibonacci*.
 
-<a href="https://musadsl.yeste.studio" class="button button--primary" target="_blank" rel="noopener">musadsl.yeste.studio</a>
+🌐 [musadsl.yeste.studio](https://musadsl.yeste.studio)
 
 ## Características principales
 
