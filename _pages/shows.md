@@ -11,7 +11,7 @@ image_attribution: 'Photo by <a href="https://unsplash.com/@adigold1?utm_source=
 
 ## Estreno de Espiral, conferencia y charla
 
-![](/images/2022-11-23_Euskera.jpg)
+![](/images/shows/2022-11-23_Euskera.jpg)
 
 Facultad de Bellas Artes
 
@@ -27,13 +27,13 @@ Compuesta con MusaDSL. Renderizada con Spitfire BBC Symphonic Orchestra sobre Bi
 
 ### Conferencia y charla sobre composición algorítmica y espacialización con Mikel Arce
 
-![](/images/2022-11-23_charla.jpeg)
+![](/images/shows/2022-11-23_charla.jpeg)
 
 # Barcelona, 2022-11-19
 
 ##  Sessió Improvisació Electroacústica
 
-![](/images/2022-11-19_Impro-electroacustica_web.jpeg)
+![](/images/shows/2022-11-19_Impro-electroacustica_web.jpeg)
 
 L'Antic Forn de Vallcarca
 
@@ -50,7 +50,7 @@ Compuesta con MusaDSL. Renderizada con Spitfire BBC Symphonic Orchestra sobre Bi
 # Barcelona, 2020-09-30
 
 ## El Sindicato de Altavoces: Obras de Graus, Lewin-Richter, Rossinyol y Sánchez
-![](/images/2020-09-30_sindicato_altavoces_phonos.png)
+![](/images/shows/2020-09-30_sindicato_altavoces_phonos.png)
 
 Sala Aranyó (Campus UPF Poblenou)
 
@@ -69,7 +69,7 @@ Construida a partir de grabaciones de campo. Procesada en MusaDSL, Max/MSP y Liv
 
 # Barcelona, 2019-09
 ## Festival Zeppelin
-![](/images/2019-09_Zeppelin.png)
+![](/images/shows/2019-09_Zeppelin.png)
 
 CCCB
 
@@ -87,7 +87,7 @@ Construida a partir de grabaciones de campo. Procesada en MusaDSL, Max/MSP y Liv
 
 # Barcelona, 2019-05-09
 ## Orquesta del Caos - Hangar.org
-![](/images/2019-05-08+09-Hangar.jpg)
+![](/images/shows/2019-05-08+09-Hangar.jpg)
 
 Hangar.org - Sala Ricson
 
@@ -141,7 +141,7 @@ proceso de cambio en el estilo de articulación, en el tempo, en el pedal y en l
 
 # Barcelona, 2018-02-06
 ## Re/presentaciones psicoacústicas
-![](/images/2018-02_Re-Presentaciones_psicoacusticas.jpg)
+![](/images/shows/2018-02_Re-Presentaciones_psicoacusticas.jpg)
 
 Hangar.org - Sala Ricson
 

@@ -1,5 +1,5 @@
 ---
-layout: page
+layout: works
 title: Works
 permalink: works
 image: images/works.jpg
@@ -23,7 +23,7 @@ Created with MusaDSL, Max/MSP, Ableton Live and remixed in Bitwig Studio.
 
 Listen with headphones!
 
-{% soundcloud  1440757840 %}
+{% include wavesurfer-player.html audio_file="/audio/works/elevator-doors-16-remixed-2023.mp3" image_file="/images/works/elevator-doors-16-remixed-2023.jpg" title="An Elevator Door's 16 Selected Seconds" player_id="elevator-16" %}
 
 ## Espiral (2022)
 
@@ -33,7 +33,7 @@ Composed with MusaDSL. Rendered with Spitfire BBC Symphonic Orchestra on Bitwig 
 
 Listen with headphones!
 
-{% soundcloud 1394013898 %}
+{% include wavesurfer-player.html audio_file="/audio/works/espiral.mp3" image_file="/images/works/espiral.jpg" title="Espiral" player_id="espiral" %}
 
 ## El Bosque (2019)
 
@@ -41,7 +41,7 @@ Stereo reduction of the original work for 24 channels premiered in Festival Zepp
 
 Created with MusaDSL, Max/MSP and Ableton Live.
 
-{% soundcloud 1237188064 %}
+{% include wavesurfer-player.html audio_file="/audio/works/el-bosque.mp3" image_file="/images/works/el-bosque.jpg" title="El Bosque" player_id="el-bosque" %}
 
 ## Piezoreflections (2017)
 
@@ -49,15 +49,15 @@ Stereo version of the original 12 channels work.
 
 Scored with MusaDSL and rendered with Ableton Live.
 
-{% soundcloud 353713223 %}
+{% include wavesurfer-player.html audio_file="/audio/works/piezoreflections.mp3" image_file="/images/works/piezoreflections.jpg" title="Piezoreflections" player_id="piezoreflections" %}
 
-## Estudio Fibonacci para piano virtual nº2 (2018) 
+## Estudio Fibonacci para piano virtual nº2 (2018)
 
 Stereo version of the original 12 channels work.
 
 Scored with MusaDSL and rendered on multiple virtual pianos with Ableton Live.
 
-{% soundcloud 537174672 %}
+{% include wavesurfer-player.html audio_file="/audio/works/estudio-fibonacci-piano-n2.mp3" image_file="/images/works/estudio-fibonacci-piano-n2.jpg" title="Estudio Fibonacci para piano virtual nº2" player_id="fibonacci" %}
 
 ## An Elevator Door's 6 Selected Seconds (2018)
 
@@ -65,13 +65,13 @@ Stereo version of the original 12 channels work.
 
 Created with MusaDSL, Max/MSP and Ableton Live.
 
-{% soundcloud 1237560436 %}
+{% include wavesurfer-player.html audio_file="/audio/works/elevator-doors-6-selected-seconds.mp3" image_file="/images/works/elevator-doors-6-selected-seconds.jpg" title="An Elevator Door's 6 Selected Seconds" player_id="elevator-6" %}
 
 ## The Washing Machine (2nd Edition) (2016)
 
 Created with MusaDSL, Supercollider and Ableton Live.
 
-{% soundcloud 338706696 %}
+{% include wavesurfer-player.html audio_file="/audio/works/washing-machine-2nd-edition.mp3" image_file="/images/works/washing-machine-2nd-edition.jpg" title="The Washing Machine (2nd Edition)" player_id="washing-machine" %}
 
 # Soundscapes
 
@@ -81,29 +81,28 @@ Created with MusaDSL, Supercollider and Ableton Live.
 
 Binaural soundscape from street walking in London.
 
-{% soundcloud 632243694 %}
+{% include wavesurfer-player.html audio_file="/audio/works/london-a-year-ago.mp3" image_file="/images/works/london-a-year-ago.jpg" title="London, a year ago" player_id="london" %}
 
 ## Tate Gallery Spaces: Rothko vs Richter (2018)
 
 Soundscape from Tate Gallery: different sounds from different artists.
 
-{% soundcloud 502037301 %}
+{% include wavesurfer-player.html audio_file="/audio/works/tate-gallery-rothko-richter.mp3" image_file="/images/works/tate-gallery-rothko-richter.jpg" title="Tate Gallery Spaces: Rothko vs Richter" player_id="tate-gallery" %}
 
 ## A Bridge to the Inner Life of a Fridge (2017)
 
 The inner life of fridge.
 
-{% soundcloud 327141067 %}
+{% include wavesurfer-player.html audio_file="/audio/works/bridge-inner-life-fridge.mp3" image_file="/images/works/bridge-inner-life-fridge.jpg" title="A Bridge to the Inner Life of a Fridge" player_id="bridge-fridge" %}
 
 ## Marinas (2017)
 
 Sounds from the sea.
 
-{% soundcloud 363937835 %}
+{% include wavesurfer-player.html audio_file="/audio/works/marinas.mp3" image_file="/images/works/marinas.jpg" title="Marinas" player_id="marinas" %}
 
 ## September in Camp de Mar (2016)
 
 A weekend in Camp de Mar.
 
-{% soundcloud 326407913 %}
-
+{% include wavesurfer-player.html audio_file="/audio/works/september-camp-de-mar.mp3" image_file="/images/works/september-camp-de-mar.jpg" title="September in Camp de Mar" player_id="september" %}
