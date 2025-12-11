@@ -14,4 +14,3 @@ vendor
 Gemfile.lock
 bin
 
-*.mindnode
