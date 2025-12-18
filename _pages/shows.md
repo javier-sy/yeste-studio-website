@@ -25,6 +25,8 @@ La percepción del espacio en que se reproduce la pieza también experimenta cam
 
 Compuesta con MusaDSL. Renderizada con Spitfire BBC Symphonic Orchestra sobre Bitwig Studio y procesada con Max/MSP.
 
+**Versión online:** [Espiral](/works/espiral) — reducción estéreo binaural del original en 16 canales.
+
 ### Conferencia y charla sobre composición algorítmica y espacialización con Mikel Arce
 
 ![](/images/shows/2022-11-23_charla.jpeg)
@@ -47,6 +49,8 @@ La percepción del espacio en que se reproduce la pieza también experimenta cam
 
 Compuesta con MusaDSL. Renderizada con Spitfire BBC Symphonic Orchestra sobre Bitwig Studio y procesada con Max/MSP.
 
+**Versión online:** [Espiral](/works/espiral) — reducción estéreo binaural del original en 8 canales.
+
 # Barcelona, 2020-09-30
 
 ## El Sindicato de Altavoces: Obras de Graus, Lewin-Richter, Rossinyol y Sánchez
@@ -66,6 +70,7 @@ Pero ¡atención! ¿Es esta realidad paralela, la del bosque no contaminado por 
 
 Construida a partir de grabaciones de campo. Procesada en MusaDSL, Max/MSP y Live.
 
+**Versión online:** [El Bosque](/works/el-bosque) — reducción estéreo del original en 15+2 canales.
 
 # Barcelona, 2019-09
 ## Festival Zeppelin
@@ -85,6 +90,8 @@ Pero ¡atención! ¿Es esta realidad paralela, la del bosque no contaminado por 
 
 Construida a partir de grabaciones de campo. Procesada en MusaDSL, Max/MSP y Live.
 
+**Versión online:** [El Bosque](/works/el-bosque) — reducción estéreo del original en 24 canales.
+
 # Barcelona, 2019-05-09
 ## Orquesta del Caos - Hangar.org
 ![](/images/shows/2019-05-08+09-Hangar.jpg)
@@ -99,11 +106,12 @@ Abrir puerta. Abrir portezuelas. Cerrar puerta. Cerrar portezuelas. Pulsar boton
 Repetir del revés lo que se cerró y se abrió. 6 segundos de eventos sonoros recorridos, milisegundo a milisegundo, 
 en muestras microscópicas de duraciones entre 0.1 ms y 84 ms, cuyo loop evolutivo mantiene al oído en las 
 fronteras entre el pulso rítmico, el tono continuo y el esbozo del evento perceptual. 
-Armonías generadas a través de la reproducción de los microloops con sample-rates de múltiplos armónicos. 
+Armonías generadas a través de la reproducción de los microloops con sample-rates de múltiplos armónicos.
 Exploración del binomio timbre-armonía.
 
+**Versión online:** [An Elevator Door's 6 Selected Seconds](/works/elevator-doors-6-selected-seconds) — reducción estéreo del original en 12 canales.
 
-#### A bridge to the inner life of a fridge (2017) 12’14’’, 12 canales
+#### A bridge to the inner life of a fridge (2017) 12'14'', 12 canales
 
 Microsoundscape. Un sorprendente frigorífico nos muestra su profunda vida interior. 
 Grabación desde el interior en la sección activa de su ciclo de refrigeración/reposo. 
@@ -113,10 +121,11 @@ disidencias y reencuentros motívicos.
 La pieza es un fragmento de 12 minutos grabados sin cortes.
 El procesamiento aplicado ha sido un ligero filtrado paramétrico al inicio, ecualización general y ajuste de nivel.
 
+**Versión online:** [A Bridge to the Inner Life of a Fridge](/works/bridge-inner-life-fridge) — reducción estéreo del original en 12 canales.
 
-#### Piezoreflections 12 (2017) 5’31’’, 12 canales
+#### Piezoreflections 12 (2017) 5'31'', 12 canales
 
-Piezoreflections 12 nace a partir del fallo y del potencial fallo. 
+Piezoreflections 12 nace a partir del fallo y del potencial fallo.
 Fallo al conectar unos micrófonos piezoeléctricos a la grabadora. 
 La diferencia de impedancia convirtió los cables de los micrófonos en unas antenas que registraron interferencias electrónicas. 
 45 minutos de grabados al acercar los micros a los aparatos domésticos son recortados en pequeños fragmentos con identidad propia y ordenados en 6 series. 
@@ -129,15 +138,18 @@ a menos que se imponga una limitación: máximo 6 fragmentos simultáneos.
 A un rítmico bajo ostinato se superponen en 12 canales las proyecciones sonoras del algoritmo arborescente,
 creando una atmósfera hipnótica y bizarra.
 
+**Versión online:** [Piezoreflections](/works/piezoreflections) — reducción estéreo del original en 12 canales.
 
-#### Estudio para piano virtual nº2 (Estudio Fibonacci) (2018) 19’06’’, 12 canales
+#### Estudio para piano virtual nº2 (Estudio Fibonacci) (2018) 19'06'', 12 canales
 
 Una exploración algorítmica a través de la serie de Fibonacci 1, 1, 2, 3, 5, 8, 13, … 
 sobre un conjunto de pianos virtuales. 
 La serie, aplicada del derecho y del revés, determina de formas complejas las alturas, las duraciones, 
 las líneas protomelódicas, las longitudes de las bases generatrices que alimentan el algoritmo principal. 
-Contra este desarrollo complejo y predecible se opone una limitación a la serie (de por sí infinita) y 
+Contra este desarrollo complejo y predecible se opone una limitación a la serie (de por sí infinita) y
 proceso de cambio en el estilo de articulación, en el tempo, en el pedal y en la espacialización.
+
+**Versión online:** [Estudio Fibonacci para piano virtual nº2](/works/estudio-fibonacci-piano-n2) — reducción estéreo del original en 12 canales.
 
 # Barcelona, 2018-02-06
 ## Re/presentaciones psicoacústicas
@@ -160,3 +172,4 @@ a menos que se imponga una limitación: máximo 6 fragmentos simultáneos.
 A un rítmico bajo ostinato se superponen en 12 canales las proyecciones sonoras del algoritmo arborescente,
 creando una atmósfera hipnótica y bizarra.
 
+**Versión online:** [Piezoreflections](/works/piezoreflections) — reducción estéreo del original en 12 canales.
