@@ -35,6 +35,9 @@ exclude:
 
 # Collections
 collections:
+  works:
+    output: true
+    permalink: /works/:title/
   phd_music:
     output: true
     permalink: /phd/materials/:title/
