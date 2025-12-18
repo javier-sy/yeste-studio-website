@@ -22,19 +22,6 @@ Exploración de composición algorítmica en MusaDSL, síntesis granular y gener
 
 ---
 
-## Piezoreflections
-
-Composición algorítmica en MusaDSL basada en la idea de "reacción en cadena sonora". Material base: interferencias electromagnéticas capturadas mediante micros piezoeléctricos conectados en *impedance mismatch* a la grabadora.
-
-{% assign piezoreflections = site.phd_music | where_exp: "item", "item.title contains 'Piezoreflections'" %}
-{% for work in piezoreflections %}
-### [{{ work.title }}]({{ work.url }})
-**{{ work.year }}** • {{ work.duration }}
-{{ work.description }}
-{% endfor %}
-
----
-
 ## An Elevator Door's 16 Selected Seconds
 
 Microscopio sonoro: expansión temporal extrema (~X100) de grabaciones de campo de una puerta de ascensor. Programado en MusaDSL.
