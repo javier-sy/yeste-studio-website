@@ -49,7 +49,7 @@ La percepción del espacio en que se reproduce la pieza también experimenta cam
 
 Compuesta con MusaDSL. Renderizada con Spitfire BBC Symphonic Orchestra sobre Bitwig Studio y procesada con Max/MSP.
 
-**Versión online:** [Espiral](/works/espiral) — reducción estéreo binaural del original en 8 canales.
+**Versión online:** [Espiral](/works/espiral) — reducción estéreo binaural del original en 16 canales.
 
 # Barcelona, 2020-09-30
 
@@ -70,7 +70,7 @@ Pero ¡atención! ¿Es esta realidad paralela, la del bosque no contaminado por 
 
 Construida a partir de grabaciones de campo. Procesada en MusaDSL, Max/MSP y Live.
 
-**Versión online:** [El Bosque](/works/el-bosque) — reducción estéreo del original en 15+2 canales.
+**Versión online:** [El Bosque](/works/el-bosque) — reducción estéreo del original en 24 canales.
 
 # Barcelona, 2019-09
 ## Festival Zeppelin
