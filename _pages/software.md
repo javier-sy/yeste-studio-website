@@ -19,16 +19,19 @@ Nota es un plugin para [Claude Code](https://claude.ai/code) que transforma la I
 
 Nota incorpora una base de conocimiento semántica que cubre toda la documentación, la referencia de API y más de 20 proyectos de demostración. A medida que el compositor indexa sus obras (`/nota:index`) y extrae buenas prácticas (`/nota:best-practices`), el asistente se enriquece con ese conocimiento personal. Cada paso alimenta al siguiente, formando un ciclo creativo continuo.
 
-## Características principales
+## Características principales de MusaDSL
 
-- **Secuenciador avanzado** con precisión de microsegundos para estructuras polirrítmicas y politemporales
-- Múltiples fuentes de reloj (interno, MIDI, externo)
-- **Herramientas generativas**: cadenas de Markov, Variatio, Rules, GenerativeGrammar y algoritmos genéticos Darwin
-- **Series** para generar secuencias de notas, duraciones, velocidades y cualquier parámetro sonoro o musical
-- Sistema de notación textual **Neumalang** con soporte para grados de escala
-- Transcripción a MIDI y MusicXML con expansión de ornamentos
-- Soporte completo de **escalas, modos y afinaciones** (temperamento igual y afinación justa)
-- Operaciones matriciales para transformación de estructuras sonoras y musicales
+- **Secuenciador avanzado** con precisión de microsegundos para estructuras polirrítmicas y politemporales, con múltiples fuentes de reloj (interno, MIDI, externo)
+- **Herramientas generativas**: cadenas de Markov, Variatio, Rules (sistemas-L), GenerativeGrammar y algoritmos genéticos Darwin
+- **Series**: iteradores lazy con operaciones funcionales (transformar, filtrar, invertir, combinar, cortar, repetir) y generadores especializados (Fibonacci, serie armónica, aleatorio con restricciones)
+- **Más de 30 escalas y modos** en 9 familias (modos griegos, pentatónicas, blues, simétricas, bebop, étnicas, menor melódica...) con soporte de temperamento igual y afinación justa
+- **Sistema de acordes** con calidad, extensiones, voicings y navegación acorde-escala
+- **Datasets y Score**: representación estructurada de eventos musicales (grados de escala, alturas MIDI, dinámicas) con organización multivoce
+- Sistema de notación textual **Neumalang** con soporte para grados de escala y ornamentos
+- **Operaciones matriciales** para transformación de estructuras sonoras y musicales
+- Transcripción a **MIDI** y generación de partituras en **MusicXML** con expansión de ornamentos
+- **Comunicaciones MIDI** multiplataforma para conexión con instrumentos y controladores
+- **Gestión polifónica MIDI** con asignación automática de voces
 - **Entorno de live coding** con integración para VSCode, Bitwig Studio y Ableton Live
 
 ## Licencia
