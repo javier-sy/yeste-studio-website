@@ -13,7 +13,11 @@ MusaDSL separa la lógica compositiva del renderizado de audio, permitiendo crea
 
 Utilizo MusaDSL en diversas de mis obras, como *Espiral*, *El Bosque*, *Piezoreflections* o el *Estudio Fibonacci*.
 
-🌐 [musadsl.yeste.studio](https://musadsl.yeste.studio)
+## Nota — Asistente de composición con IA
+
+Nota es un plugin para [Claude Code](https://claude.ai/code) que transforma la IA en un asistente de composición algorítmica con conocimiento profundo de MusaDSL. Permite preguntar sobre el framework en lenguaje natural (`/nota:explain`), generar ideas compositivas (`/nota:think`), escribir código verificado a partir de intenciones musicales (`/nota:code`), y analizar las propias obras (`/nota:analyze`).
+
+Nota incorpora una base de conocimiento semántica que cubre toda la documentación, la referencia de API y más de 20 proyectos de demostración. A medida que el compositor indexa sus obras (`/nota:index`) y extrae buenas prácticas (`/nota:best-practices`), el asistente se enriquece con ese conocimiento personal. Cada paso alimenta al siguiente, formando un ciclo creativo continuo.
 
 ## Características principales
 
@@ -30,3 +34,5 @@ Utilizo MusaDSL en diversas de mis obras, como *Espiral*, *El Bosque*, *Piezoref
 ## Licencia
 
 Todos los proyectos del ecosistema MusaDSL están publicados bajo licencia **LGPL 3.0** o **GPL 3.0**.
+
+🌐 [musadsl.yeste.studio](https://musadsl.yeste.studio)
