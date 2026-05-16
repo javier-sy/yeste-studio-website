@@ -1,0 +1,8 @@
+# Configuración de versión para yeste-studio-website
+TYPE="site"
+PKG_NAME="yeste.studio"
+TEST_COMMAND=""
+PUBLISH_PLATFORM="GitHub Pages"
+SITE_URL="https://yeste.studio"
+# Los websites no usan versionado: publish = git push, sin tag.
+TAG_ON_PUBLISH=false
