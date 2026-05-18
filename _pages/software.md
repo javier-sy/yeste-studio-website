@@ -26,13 +26,22 @@ Utilizo MusaDSL en diversas de mis obras, como *Espiral*, *El Bosque*, *Piezoref
 - Transcripción a **MIDI** y generación de partituras en **MusicXML** con expansión de ornamentos
 - **Comunicaciones MIDI** multiplataforma para conexión con instrumentos y controladores
 - **Gestión polifónica MIDI** con asignación automática de voces
-- **Entorno de live coding** con integración para VSCode, Bitwig Studio y Ableton Live
 
 ## Licencia
 
 Todos los proyectos del ecosistema MusaDSL están publicados bajo licencia **LGPL 3.0** o **GPL 3.0**.
 
 🌐 [musadsl.yeste.studio](https://musadsl.yeste.studio)
+
+# MusaLCE — Entorno de Live Coding
+
+MusaLCE es el entorno de live coding de MusaDSL: permite escribir Ruby en el editor y oír los cambios en tiempo real mientras el secuenciador sigue tocando. Incluye un servidor (`musalce-server`), una extensión para Visual Studio Code, y conectores para **Bitwig Studio** y **Ableton Live**.
+
+MusaLCE soporta dos modos: un workflow autónomo con REPL propio (control total, ideal para SuperCollider, Max/MSP u OSC), y un workflow integrado con DAW donde `musalce-server` expone una API `daw.*` que gestiona transport, tracks y voces directamente.
+
+MusaLCE está publicado bajo licencia **LGPL 3.0**.
+
+🌐 [musalce.yeste.studio](https://musalce.yeste.studio)
 
 # Nota — Asistente de composición con IA
 
@@ -42,4 +51,9 @@ Nota incorpora una base de conocimiento semántica que cubre toda la documentaci
 
 Nota está publicado bajo licencia **GPL 3.0**.
 
-🌐 [musadsl.yeste.studio](https://musadsl.yeste.studio)
+🌐 [nota.yeste.studio](https://nota.yeste.studio)
+
+# Próximamente
+
+- **Pulso** — controlador físico (plugin de Elgato Stream Deck) para sesiones de live coding con MusaLCE. Publicación pendiente.
+- **Plugin VST3** — plugin de audio para integración directa de MusaDSL en DAWs. En desarrollo.
