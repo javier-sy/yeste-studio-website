@@ -35,9 +35,32 @@ Todos los proyectos del ecosistema MusaDSL están publicados bajo licencia **LGP
 
 # MusaLCE — Entorno de Live Coding
 
-MusaLCE es el entorno de live coding de MusaDSL: permite escribir Ruby en el editor y oír los cambios en tiempo real mientras el secuenciador sigue tocando. Incluye un servidor (`musalce-server`), una extensión para Visual Studio Code, y conectores para **Bitwig Studio** y **Ableton Live**.
+MusaLCE es el entorno de live coding de MusaDSL: permite escribir Ruby en el editor y oír los cambios en tiempo real mientras el secuenciador sigue tocando.
 
-MusaLCE soporta dos modos: un workflow autónomo con REPL propio (control total, ideal para SuperCollider, Max/MSP u OSC), y un workflow integrado con DAW donde `musalce-server` expone una API `daw.*` que gestiona transport, tracks y voces directamente.
+MusaLCE soporta dos vías de uso, con componentes distintos:
+
+## Vía 1 — Standalone (REPL propio)
+
+Control total: tú construyes el `main.rb` con secuenciador, voces, reloj y transport, y arrancas el REPL dentro de tu propio contexto DSL. Ideal para SuperCollider, Max/MSP, OSC o cualquier destino fuera de un DAW.
+
+Componentes:
+
+- [**musa-dsl**](https://github.com/javier-sy/musa-dsl) — el framework. Su módulo `Musa::REPL` provee el REPL TCP/1327 al que conecta el editor.
+- [**MusaLCEClientForVSCode**](https://github.com/javier-sy/MusaLCEClientForVSCode) — extensión de Visual Studio Code que envía la selección o la línea actual al REPL (atajos `Ctrl+Alt+Enter` y `Ctrl+Alt+M`).
+
+## Vía 2 — Integrada con DAW (Ableton Live o Bitwig Studio)
+
+`musalce-server` empaqueta REPL, secuenciador, handler del DAW y superficie de control. Expone una API `daw.*` (transport, tracks, voces, surface) lista para usar.
+
+Componentes:
+
+- [**musa-dsl**](https://github.com/javier-sy/musa-dsl) — base de composición algorítmica.
+- [**musalce-server**](https://github.com/javier-sy/musalce-server) — gem Ruby que orquesta REPL + secuenciador + handler OSC al DAW.
+- [**MusaLCEClientForVSCode**](https://github.com/javier-sy/MusaLCEClientForVSCode) — mismo editor cliente que en la vía 1 (es REPL-agnóstico).
+- [**MusaLCEforBitwig**](https://github.com/javier-sy/MusaLCEforBitwig) (extensión Java para Bitwig 5+) **o** [**MusaLCEforLive**](https://github.com/javier-sy/MusaLCEforLive) (MIDI Remote Script Python para Live 11+) — el conector específico de tu DAW.
+- *Opcional, próximamente*: **Pulso**, controlador físico para Stream Deck que pinta y dispara controles `surface[:event]` del score (publicación pendiente).
+
+Internamente la vía 2 es una especialización de la vía 1: `musalce-server` abre el mismo `Musa::REPL` tras pre-construir toda la infraestructura.
 
 MusaLCE está publicado bajo licencia **LGPL 3.0**.
 
