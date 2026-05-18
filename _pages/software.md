@@ -56,4 +56,4 @@ Nota está publicado bajo licencia **GPL 3.0**.
 # Próximamente
 
 - **Pulso** — controlador físico (plugin de Elgato Stream Deck) para sesiones de live coding con MusaLCE. Publicación pendiente.
-- **Plugin VST3** — plugin de audio para integración directa de MusaDSL en DAWs. En desarrollo.
+- **Plugins VST3** — colección de plugins de audio para tareas de mezcla y masterización. Varios plugins en desarrollo, publicación pendiente.
