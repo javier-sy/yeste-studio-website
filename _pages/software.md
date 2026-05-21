@@ -55,4 +55,4 @@ Licencia **GPL 3.0**.
 
 # Próximamente
 
-- **Pulso** — controlador físico (plugin de Elgato Stream Deck) para sesiones de live coding con MusaLCE. Publicación pendiente.
+- **Pulso** — sistema de control remoto OSC para DAWs musicales mediante un plugin de Elgato Stream Deck más un bridge específico del DAW. Para Bitwig Studio en su primera versión; Ableton Live planificado. Incluye, entre otras superficies, integración con MusaLCE Surface para sesiones de live coding. Publicación pendiente.
