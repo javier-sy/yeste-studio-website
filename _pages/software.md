@@ -5,8 +5,6 @@ permalink: software
 image: images/software.png
 ---
 
-> Para una visión completa del ecosistema — qué hay, cómo encajan los proyectos entre sí y cuál elegir según el caso de uso — visita **[musa-ecosystem.yeste.studio](https://musa-ecosystem.yeste.studio)**.
-
 # MusaDSL
 
 Soy el autor de MusaDSL, un lenguaje de dominio específico de código abierto basado en Ruby, diseñado para la composición sonora y musical algorítmica.
