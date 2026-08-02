@@ -16,7 +16,7 @@ Utilizo MusaDSL en diversas de mis obras, como *Espiral*, *El Bosque*, *Piezoref
 ## Características principales
 
 - **Secuenciador avanzado** con precisión de microsegundos para estructuras polirrítmicas y politemporales, con múltiples fuentes de reloj (interno, MIDI, externo)
-- **Herramientas generativas**: cadenas de Markov, Variatio, Rules (sistemas-L), GenerativeGrammar y algoritmos genéticos Darwin
+- **Herramientas generativas**: cadenas de Markov, Variatio, GenerativeGrammar y algoritmos genéticos Darwin
 - **Series**: iteradores lazy con operaciones funcionales (transformar, filtrar, invertir, combinar, cortar, repetir) y generadores especializados (Fibonacci, serie armónica, aleatorio con restricciones)
 - **Más de 30 escalas y modos** en 9 familias (modos griegos, pentatónicas, blues, simétricas, bebop, étnicas, menor melódica...) con soporte de temperamento igual y afinación justa
 - **Sistema de acordes** con calidad, extensiones, voicings y navegación acorde-escala
