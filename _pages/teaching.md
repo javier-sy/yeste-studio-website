@@ -11,7 +11,7 @@ image:
 
 ### Postproducción de audio
 
-Máster propio en Arte Sonoro (2 años), Universitat de Barcelona. Profesor colaborador.
+Màster en Art Sonor (máster propio, 2 cursos), Universitat de Barcelona. Profesor colaborador.
 
 # Clases invitadas y charlas
 
