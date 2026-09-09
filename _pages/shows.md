@@ -23,7 +23,7 @@ La percepción del espacio en que se reproduce la pieza también experimenta cam
 
 Compuesta con MusaDSL. Renderizada con Spitfire BBC Symphonic Orchestra sobre Bitwig Studio y procesada con Max/MSP.
 
-**Versión online:** [Espiral](/works/espiral) — reducción estéreo binaural del original en 16 canales.
+**Versión online:** [Espiral](/works/espiral) - reducción estéreo binaural del original en 16 canales.
 
 ### Presentación de MusaDSL y Nota
 
@@ -47,7 +47,7 @@ La percepción del espacio en que se reproduce la pieza también experimenta cam
 
 Compuesta con MusaDSL. Renderizada con Spitfire BBC Symphonic Orchestra sobre Bitwig Studio y procesada con Max/MSP.
 
-**Versión online:** [Espiral](/works/espiral) — reducción estéreo binaural del original en 16 canales.
+**Versión online:** [Espiral](/works/espiral) - reducción estéreo binaural del original en 16 canales.
 
 ### Conferencia y charla sobre composición algorítmica y espacialización con Mikel Arce
 
@@ -73,7 +73,7 @@ La percepción del espacio en que se reproduce la pieza también experimenta cam
 
 Compuesta con MusaDSL. Renderizada con Spitfire BBC Symphonic Orchestra sobre Bitwig Studio y procesada con Max/MSP.
 
-**Versión online:** [Espiral](/works/espiral) — reducción estéreo binaural del original en 16 canales.
+**Versión online:** [Espiral](/works/espiral) - reducción estéreo binaural del original en 16 canales.
 
 # Barcelona, 2020-09-30
 
@@ -94,7 +94,7 @@ Pero ¡atención! ¿Es esta realidad paralela, la del bosque no contaminado por 
 
 Construida a partir de grabaciones de campo. Procesada en MusaDSL, Max/MSP y Live.
 
-**Versión online:** [El Bosque](/works/el-bosque) — reducción estéreo del original en 24 canales.
+**Versión online:** [El Bosque](/works/el-bosque) - reducción estéreo del original en 24 canales.
 
 # Barcelona, 2019-09
 ## Festival Zeppelin
@@ -114,7 +114,7 @@ Pero ¡atención! ¿Es esta realidad paralela, la del bosque no contaminado por 
 
 Construida a partir de grabaciones de campo. Procesada en MusaDSL, Max/MSP y Live.
 
-**Versión online:** [El Bosque](/works/el-bosque) — reducción estéreo del original en 24 canales.
+**Versión online:** [El Bosque](/works/el-bosque) - reducción estéreo del original en 24 canales.
 
 # Barcelona, 2019-05-09
 ## Orquesta del Caos - Hangar.org
@@ -133,7 +133,7 @@ fronteras entre el pulso rítmico, el tono continuo y el esbozo del evento perce
 Armonías generadas a través de la reproducción de los microloops con sample-rates de múltiplos armónicos.
 Exploración del binomio timbre-armonía.
 
-**Versión online:** [An Elevator Door's 6 Selected Seconds](/works/elevator-doors-6-selected-seconds) — reducción estéreo del original en 12 canales.
+**Versión online:** [An Elevator Door's 6 Selected Seconds](/works/elevator-doors-6-selected-seconds) - reducción estéreo del original en 12 canales.
 
 #### A bridge to the inner life of a fridge (2017) 12'14'', 12 canales
 
@@ -145,7 +145,7 @@ disidencias y reencuentros motívicos.
 La pieza es un fragmento de 12 minutos grabados sin cortes.
 El procesamiento aplicado ha sido un ligero filtrado paramétrico al inicio, ecualización general y ajuste de nivel.
 
-**Versión online:** [A Bridge to the Inner Life of a Fridge](/works/bridge-inner-life-fridge) — reducción estéreo del original en 12 canales.
+**Versión online:** [A Bridge to the Inner Life of a Fridge](/works/bridge-inner-life-fridge) - reducción estéreo del original en 12 canales.
 
 #### Piezoreflections 12 (2017) 5'31'', 12 canales
 
@@ -162,7 +162,7 @@ a menos que se imponga una limitación: máximo 6 fragmentos simultáneos.
 A un rítmico bajo ostinato se superponen en 12 canales las proyecciones sonoras del algoritmo arborescente,
 creando una atmósfera hipnótica y bizarra.
 
-**Versión online:** [Piezoreflections](/works/piezoreflections) — reducción estéreo del original en 12 canales.
+**Versión online:** [Piezoreflections](/works/piezoreflections) - reducción estéreo del original en 12 canales.
 
 #### Estudio para piano virtual nº2 (Estudio Fibonacci) (2018) 19'06'', 12 canales
 
@@ -173,7 +173,7 @@ las líneas protomelódicas, las longitudes de las bases generatrices que alimen
 Contra este desarrollo complejo y predecible se opone una limitación a la serie (de por sí infinita) y
 proceso de cambio en el estilo de articulación, en el tempo, en el pedal y en la espacialización.
 
-**Versión online:** [Estudio Fibonacci para piano virtual nº2](/works/estudio-fibonacci-piano-n2) — reducción estéreo del original en 12 canales.
+**Versión online:** [Estudio Fibonacci para piano virtual nº2](/works/estudio-fibonacci-piano-n2) - reducción estéreo del original en 12 canales.
 
 # Barcelona, 2018-02-06
 ## Re/presentaciones psicoacústicas
@@ -196,4 +196,4 @@ a menos que se imponga una limitación: máximo 6 fragmentos simultáneos.
 A un rítmico bajo ostinato se superponen en 12 canales las proyecciones sonoras del algoritmo arborescente,
 creando una atmósfera hipnótica y bizarra.
 
-**Versión online:** [Piezoreflections](/works/piezoreflections) — reducción estéreo del original en 12 canales.
+**Versión online:** [Piezoreflections](/works/piezoreflections) - reducción estéreo del original en 12 canales.

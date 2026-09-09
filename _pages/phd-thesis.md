@@ -13,7 +13,7 @@ image:
 
 Un lenguaje de programación no es sólo el medio con el que se implementa una idea musical que ya existía: es también el sitio donde esa idea llega a existir. Lo que puede imaginarse depende de lo que el lenguaje permite formalizar, y cuando una intención no cabe dentro de esa formalización, el lenguaje tiene que crecer para alojarla.
 
-Esta tesis investiga esa relación desde la práctica, y no sobre ella: construyendo un framework de composición algorítmica —MusaDSL— y componiendo con él a lo largo de casi una década. Las obras piden capacidades que la herramienta todavía no tiene; la herramienta, al ganarlas, deja ver caminos compositivos que antes no estaban a la vista.
+Esta tesis investiga esa relación desde la práctica, y no sobre ella: construyendo un framework de composición algorítmica -MusaDSL- y componiendo con él a lo largo de casi una década. Las obras piden capacidades que la herramienta todavía no tiene; la herramienta, al ganarlas, deja ver caminos compositivos que antes no estaban a la vista.
 
 ## Qué contiene
 

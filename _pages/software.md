@@ -35,7 +35,7 @@ Licencia **LGPL 3.0** o **GPL 3.0** según componente.
 
 MusaLCE es el entorno de live coding de MusaDSL: permite escribir Ruby en el editor y oír los cambios en tiempo real mientras el secuenciador sigue tocando.
 
-Soporta dos vías de uso — un REPL standalone que tú instancias para destinos arbitrarios (SuperCollider, Max/MSP, OSC), y una integración llave-en-mano con Ableton Live o Bitwig Studio a través de `musalce-server` y una extensión específica del DAW.
+Soporta dos vías de uso - un REPL standalone que tú instancias para destinos arbitrarios (SuperCollider, Max/MSP, OSC), y una integración llave-en-mano con Ableton Live o Bitwig Studio a través de `musalce-server` y una extensión específica del DAW.
 
 Licencia **LGPL 3.0**.
 
