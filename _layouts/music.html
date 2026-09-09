@@ -19,6 +19,9 @@ layout: default
           {% if page.year %}
           <p class="music-meta">
             <span class="music-year">{{ page.year }}</span>
+            {% if page.year_remix %}
+            <span class="music-remix"> • remixed on {{ page.year_remix }}</span>
+            {% endif %}
             {% if page.duration %}
             <span class="music-duration"> • {{ page.duration }}</span>
             {% endif %}

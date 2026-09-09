@@ -10,7 +10,7 @@ Sound works created mostly with MusaDSL and rendered with Max/MSP, Supercollider
 
 {% assign algorithmic_works = site.works | where: "category", "algorithmic" | sort: "order" %}
 {% for work in algorithmic_works %}
-## [{{ work.title }}]({{ work.url }}){% if work.year_remix %} ({{ work.year }}, remixed for stereo on {{ work.year_remix }}){% else %} ({{ work.year }}){% endif %}
+## [{{ work.title }}]({{ work.url }}){% if work.year_remix %} ({{ work.year }}, remixed on {{ work.year_remix }}){% else %} ({{ work.year }}){% endif %}
 
 {{ work.content | markdownify }}
 
