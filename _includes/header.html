@@ -23,7 +23,7 @@
             <ul class="nav__list list-reset">
               {% for item in site.data.settings.menu__settings.menu__items %}
                 <li class="nav__item{% if item.submenu %} has-submenu{% endif %}">
-                  <a href="{{ item.url | relative_url }}" class="nav__link{% if page.url == item.url %} nav__link--current{% endif %}">
+                  <a href="{% if item.submenu %}#{% else %}{{ item.url | relative_url }}{% endif %}" class="nav__link{% if page.url == item.url %} nav__link--current{% endif %}">
                     {{ item.title }}
                     {% if item.submenu %}
                       <ion-icon name="chevron-down" class="submenu-icon"></ion-icon>
@@ -67,11 +67,11 @@ document.addEventListener('DOMContentLoaded', function() {
 
   submenuItems.forEach(function(link) {
     link.addEventListener('click', function(e) {
-      // Only prevent default and toggle on mobile/tablet (when nav is overlay)
+      // A parent of a submenu is not a destination: it never navigates.
+      e.preventDefault();
+      // On mobile/tablet (when nav is overlay) it also opens the submenu.
       if (window.innerWidth <= 1024) {
-        e.preventDefault();
-        const parentItem = this.parentElement;
-        parentItem.classList.toggle('submenu-open');
+        this.parentElement.classList.toggle('submenu-open');
       }
     });
   });
