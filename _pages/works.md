@@ -2,7 +2,7 @@
 layout: works
 title: Works
 permalink: works
-image: images/works.jpg
+image: /images/works.jpg
 ---
 # Algorithmic Works
 

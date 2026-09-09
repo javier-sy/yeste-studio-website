@@ -2,7 +2,7 @@
 layout: page
 title: Software
 permalink: software
-image: images/software.png
+image: /images/software.png
 ---
 
 # MusaDSL
