@@ -26,7 +26,3 @@ Esta tesis investiga esa relación desde la práctica, y no sobre ella: construy
 
 Programa de doctorado *La realidad asediada: concepto, proceso y experimentación artística*
 Facultat de Belles Arts, Universitat de Barcelona.
-
----
-
-[Materiales de audio de la investigación](/phd/materials) · [MusaDSL](https://musadsl.yeste.studio)
