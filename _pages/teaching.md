@@ -11,7 +11,7 @@ image:
 
 ### Postproducción de audio
 
-Màster en Art Sonor (máster propio, 2 cursos), Universitat de Barcelona. Clases cada curso desde 2021-22.
+Màster en Art Sonor (máster propio, 2 cursos), Universitat de Barcelona. Profesor colaborador.
 
 # Clases invitadas y charlas
 
