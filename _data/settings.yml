@@ -15,6 +15,8 @@ menu__settings:
       url: 'works'
     - title: 'Shows'
       url: 'shows'
+    - title: 'Teaching'
+      url: 'teaching'
     - title: 'Software'
       url: 'software'
     - title: 'PhD'

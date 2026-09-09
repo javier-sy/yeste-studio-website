@@ -7,6 +7,28 @@ image_attribution: 'Photo by <a href="https://unsplash.com/@adigold1?utm_source=
 ---
 
 
+# ESMUC, Barcelona, 2026-07-01
+
+## TECSMUC: presentación de MusaDSL y Nota, y difusión de Espiral
+
+Jornada de tecnología de la ESMUC.
+
+### Espiral (2022), difusión en 12 altavoces
+
+Obra generativa para orquesta virtual de 48 instrumentos con presentación multifocal.
+
+Las dimensiones del espacio tridimensional en que se ubica una espiral son proyectadas sobre los parámetros de generación algorítmica de una secuencia de espirales distorsionadas en el tiempo y el espacio. Estas, a su vez, determinan la interpretación que realizan los instrumentos de una orquesta virtual de 48 instrumentos.
+
+La percepción del espacio en que se reproduce la pieza también experimenta cambios a través de la manipulación de aquello que relaciona el espacio y el sonido: la reverberación.
+
+Compuesta con MusaDSL. Renderizada con Spitfire BBC Symphonic Orchestra sobre Bitwig Studio y procesada con Max/MSP.
+
+**Versión online:** [Espiral](/works/espiral) — reducción estéreo binaural del original en 16 canales.
+
+### Presentación de MusaDSL y Nota
+
+**Ver también:** [Teaching & Talks](/teaching)
+
 # Universidad del País Vasco, Leioa (Bizkaia), 2022-11-23
 
 ## Estreno de Espiral, conferencia y charla
@@ -30,6 +52,8 @@ Compuesta con MusaDSL. Renderizada con Spitfire BBC Symphonic Orchestra sobre Bi
 ### Conferencia y charla sobre composición algorítmica y espacialización con Mikel Arce
 
 ![](/images/shows/2022-11-23_charla.jpeg)
+
+**Ver también:** [Teaching & Talks](/teaching)
 
 # Barcelona, 2022-11-19
 
