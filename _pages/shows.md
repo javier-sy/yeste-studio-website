@@ -13,9 +13,9 @@ image_attribution: 'Photo by <a href="https://unsplash.com/@adigold1?utm_source=
 
 Jornada de tecnología de la ESMUC.
 
-### Espiral (2022), difusión en 12 altavoces
+### Espiral (2022), variante 6, 16'50'', difusión en 12 altavoces
 
-Obra generativa para orquesta virtual de 48 instrumentos con presentación multifocal.
+Obra generativa para orquesta virtual de 48 instrumentos con presentación multifocal. Variante nº 6 renderizada para 12 canales.
 
 Las dimensiones del espacio tridimensional en que se ubica una espiral son proyectadas sobre los parámetros de generación algorítmica de una secuencia de espirales distorsionadas en el tiempo y el espacio. Estas, a su vez, determinan la interpretación que realizan los instrumentos de una orquesta virtual de 48 instrumentos.
 
