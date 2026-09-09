@@ -27,7 +27,7 @@ Jornada de tecnología de la ESMUC. Presentación del lenguaje de composición a
 
 ## Clase invitada: MusaDSL, Nota y composición algorítmica
 
-Asignatura *Composició assistida per ordinador*, 2º curso del Grau de Composició. Clase invitada de hora y media, por invitación de Eduard Resina.
+Asignatura *Composició assistida per ordinador*, 2º curso del Grau de Composició. Clase invitada de hora y media.
 
 # ESMUC, Barcelona, 2026-04-10
 
@@ -39,7 +39,7 @@ Asignatura *Composició assistida per ordinador*, 2º curso del Grau de Composic
 
 ## Clase invitada: MusaDSL, Nota y composición algorítmica
 
-Màster Propi de Composició amb Tecnologies. Clase invitada de dos horas, por invitación de Eduard Resina.
+Màster Propi de Composició amb Tecnologies. Clase invitada de dos horas.
 
 # Universidad del País Vasco, Leioa (Bizkaia), 2022-11-23
 
