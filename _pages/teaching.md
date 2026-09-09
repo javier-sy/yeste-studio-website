@@ -29,11 +29,11 @@ Jornada de tecnología de la ESMUC. Presentación del lenguaje de composición a
 
 Asignatura *Composició assistida per ordinador*, 2º curso del Grau de Composició. Clase invitada de hora y media, por invitación de Eduard Resina.
 
-# Museu de la Música de Barcelona, 2026-04-10
+# ESMUC, Barcelona, 2026-04-10
 
 ## Mesa redonda: AI in higher music education — dangers, challenges, and opportunities
 
-*Jornades ab Sentits*, 8ª edición: *Música i Representació* (9–11 de abril de 2026). Mesa redonda coordinada por Rolf Bäcker, con Rubén López-Cano, Félix Pastor y Javier Sánchez Yeste.
+*Jornades ab Sentits*, 8ª edición: *Música i Representació* (9–11 de abril de 2026), en la Sala de Teclats del Museu de la Música. Mesa redonda coordinada por Rolf Bäcker, con Rubén López-Cano, Félix Pastor y Javier Sánchez Yeste.
 
 # ESMUC, Barcelona, 2026-03-17
 
