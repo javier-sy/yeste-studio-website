@@ -27,6 +27,12 @@ Requirements: Ruby 3.4.5, Bundler 2.5
 
 **Stack**: Jekyll 4.3.4 static site generator with SCSS, WaveSurfer.js audio players, GitHub Pages deployment.
 
+**The theme is a sibling repository.** Shared look and behaviour live in
+`../yeste-studio-theme` — including `assets/js/common.js`, which implements the
+tab components and the theme toggle used here and on the product sites. A change
+to a component that also appears on another yeste.studio site belongs there, not
+in this repo; check before duplicating.
+
 ### Key Directories
 
 - `_pages/` - Main content pages (Markdown)
