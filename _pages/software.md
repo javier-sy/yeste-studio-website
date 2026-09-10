@@ -47,7 +47,7 @@ Nota es un plugin para [Claude Code](https://claude.ai/code) y [opencode](https:
 
 Nota incorpora una base de conocimiento semántica que cubre toda la documentación, la referencia de API y más de 20 proyectos de demostración. A medida que el compositor indexa sus obras (`/nota:index`) y extrae buenas prácticas (`/nota:best-practices`), el asistente se enriquece con ese conocimiento personal. Cada paso alimenta al siguiente, formando un ciclo creativo continuo.
 
-Licencia **GPL 3.0**.
+**Gratuito**, con licencia propietaria: se licencia para usarlo, no para copiarlo, modificarlo ni redistribuirlo. Lo que compongas con él es tuyo, sin condición.
 
 🌐 [nota.yeste.studio](https://nota.yeste.studio)
 
