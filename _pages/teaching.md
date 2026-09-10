@@ -11,6 +11,8 @@ image: /images/teaching.jpg
 
 ### Postproducción de audio
 
+_Mezcla y masterización digital_ aplicada a audio multicanal para instalaciones sonoras.
+
 Màster en Art Sonor (máster propio, 2 cursos), Universitat de Barcelona. Profesor colaborador.
 
 # Clases invitadas y charlas
@@ -45,6 +47,6 @@ Màster Propi de Composició amb Tecnologies. Clase invitada de dos horas.
 
 ## Conferencia y debate sobre composición algorítmica y espacialización
 
-Facultad de Bellas Artes. Conferencia y debate con Mikel Arce, en el mismo acto en que se estrenó *Espiral* en su versión original de 16 canales.
+Facultad de Bellas Artes. Conferencia y debate con Mikel Arce, sobre composición algorítmica, lenguajes de programación como medio expresivo y espacialización de audio, en el mismo acto en que se estrenó *Espiral* en su versión original de 16 canales.
 
 **Ver también:** [Shows](/shows)
