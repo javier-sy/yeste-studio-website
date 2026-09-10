@@ -2,7 +2,7 @@
 layout: page
 title: Teaching & Talks
 permalink: teaching
-image:
+image: /images/teaching.jpg
 ---
 
 # Docencia
