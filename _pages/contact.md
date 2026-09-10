@@ -10,6 +10,6 @@ If you want to send me a note please email me to
 <a href="mailto:javier@yeste.studio">javier@yeste.studio</a>.
 
 I am available for **guest lectures, workshops and teaching** on algorithmic
-composition and sound, and for **consulting** on composition tools and audio
-software. Write with what you have in mind.
+composition and sound, and for **consulting** on composition tools, audio
+software and AI applied to music creation. Write with what you have in mind.
  
