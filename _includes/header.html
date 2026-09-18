@@ -5,12 +5,8 @@
       <div class="header__inner col col-12">
 
         <div class="logo">
-          <a class="logo__link" href="{{ site.baseurl }}/">
-          {% if site.data.settings.logo %}
-            <img class="logo__image" src="{{ site.baseurl }}{{ site.data.settings.logo }}" alt="{{ site.data.settings.title }}">
-          {% else %}
-            {{ site.data.settings.title }}
-          {% endif %}
+          <a class="logo__link" href="{{ site.baseurl }}/" title="{{ site.data.settings.title }}">
+            {% include brand/lockup.svg %}
           </a>
         </div>
 
@@ -22,8 +18,20 @@
             <div class="nav__title">Menu</div>
             <ul class="nav__list list-reset">
               {% for item in site.data.settings.menu__settings.menu__items %}
+                {%- assign item_url = item.url | relative_url -%}
+                {%- assign is_current = false -%}
+                {%- if item.submenu == nil and page.url == item_url -%}
+                  {%- assign is_current = true -%}
+                {%- endif -%}
+                {%- for subitem in item.submenu -%}
+                  {%- assign subitem_url = subitem.url | relative_url -%}
+                  {%- assign subitem_prefix = subitem_url | append: "/" -%}
+                  {%- if page.url == subitem_url or page.url contains subitem_prefix -%}
+                    {%- assign is_current = true -%}
+                  {%- endif -%}
+                {%- endfor -%}
                 <li class="nav__item{% if item.submenu %} has-submenu{% endif %}">
-                  <a href="{% if item.submenu %}#{% else %}{{ item.url | relative_url }}{% endif %}" class="nav__link{% if page.url == item.url %} nav__link--current{% endif %}">
+                  <a href="{% if item.submenu %}#{% else %}{{ item_url }}{% endif %}" class="nav__link{% if is_current %} nav__link--current{% endif %}">
                     {{ item.title }}
                     {% if item.submenu %}
                       <ion-icon name="chevron-down" class="submenu-icon"></ion-icon>

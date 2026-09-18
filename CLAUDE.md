@@ -4,7 +4,7 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 
 ## Project Overview
 
-Personal website for Javier Sánchez Yeste, a sound artist and musician. The site showcases algorithmic compositions, performances, PhD research materials, and MusaDSL (a domain-specific language for algorithmic composition).
+Website of yeste.studio, a studio, lab & workshop for research and creation in sound and music. The site showcases algorithmic compositions, performances, PhD research materials, and MusaDSL (a domain-specific language for algorithmic composition).
 
 Live site: https://yeste.studio/
 
@@ -37,6 +37,7 @@ in this repo; check before duplicating.
 
 - `_pages/` - Main content pages (Markdown)
 - `_phd_music/` - Jekyll collection for PhD compositions (output to `/phd/materials/:title/`)
+- `_events/` - Jekyll collection of dated appearances, rendered by `shows.md` and `teaching.md` (no pages of their own)
 - `_layouts/` - HTML templates (`works.html` and `music.html` include WaveSurfer.js players)
 - `_includes/` - Reusable components (`wavesurfer-player.html` for inline audio players)
 - `_sass/` - ITCSS-structured stylesheets (0-settings, 1-tools, 2-base, 3-modules, 4-layouts)
@@ -58,7 +59,7 @@ Files in `_phd_music/` use this front matter structure:
 ```yaml
 layout: music
 title: "Composition Name"
-composer: "Javier Sánchez Yeste"
+composer: "yeste.studio"
 duration: "HH:MM"
 year: 2022
 techniques: ["MusaDSL", "SuperCollider"]
@@ -68,9 +69,45 @@ soundcloud_url: "https://soundcloud.com/..."
 github_code: "https://github.com/..."
 ```
 
+### Events Collection
+
+`_events/` holds every dated appearance (concert, premiere, talk, lecture, panel), one
+file per event (`YYYY-MM-DD-slug.md`, `output: false`). `shows.md` and `teaching.md` are
+two views of the same collection: each lists the events that have activities of its kinds
+(`performance` for shows; `course` for the teaching page's *Docencia* block; `talk`, `lecture`, `panel` for its talks) through
+`_includes/event.html`, and links to the other page when the event also has the other kind.
+Dates are real YAML dates: ordering and the `dd-mm-yyyy` display belong to the include.
+
+```yaml
+title: "Estreno de Espiral, conferencia y charla"
+date: 2022-11-23
+date_precision: month     # only when just the month is known; date then holds the 1st
+date_label: "2021-22 - hoy" # ongoing: shown instead of the date, which only orders
+place: "Facultad de Bellas Artes, Universidad del País Vasco"
+city: "Leioa (Bizkaia)"
+image: /images/shows/....jpg
+intro: |                  # optional, shown under the title on every view
+activities:
+  - kind: performance
+    title: "Espiral, variante 6, estreno original en 16 canales"
+    work: espiral         # slug of the _works/ document: gives author, year and the online link
+    duration: "16:50"     # of the performed version (the work's own is the online one)
+    online: "reducción estéreo binaural del original en 16 canales"
+    text: |
+  - kind: talk
+    title: "..."
+    image: ...            # optional
+    text: |
+```
+
+### Brand Assets
+
+`_includes/brand/lockup.svg` (the header) and the favicon set at the site root are generated
+from the brand masters by `../yeste-studio-theme/scripts/sync-brand.sh`; never edit them by hand.
+
 ### Styling
 
-CSS custom properties enable dark/light mode (`_sass/0-settings/_color-scheme.scss`). Brand color: `#5e3aee`. Theme toggle persists via localStorage.
+CSS custom properties enable dark/light mode (`_sass/0-settings/_color-scheme.scss`). Brand color: `#279b44` (`--brand-color`; `--brand-color-text` is the same hue darkened for text on light backgrounds). Theme toggle persists via localStorage.
 
 ## Deployment
 

@@ -3,7 +3,7 @@
   .header__inner {
     position: relative;
     display: flex;
-    align-items: center;
+    align-items: flex-end; // the wordmark and the menu share a baseline (see .brand-lockup)
     flex-wrap: wrap;
     padding: 60px $base-spacing-unit;
   
@@ -13,27 +13,35 @@
   }
 }
 
-/* Logo */
+/* Logo: the brand lockup, inline SVG taking the heading colour */
 .logo__link {
-  padding: 4px 0;
-  font-family: $heading-font-family;
-  font-size: 36px;
-  letter-spacing: -1px;
-  line-height: 1;
-  font-weight: 700;
+  display: block;
+  padding: 0;
+  color: var(--heading-font-color);
   transition: none;
 
   &:hover {
     color: var(--heading-font-color);
   }
-
-  @media only screen and (max-width: $mobile) {
-    font-size: 32px;
-  }
 }
 
-.logo__image {
-  max-height: 50px;
+// The wordmark baseline sits 32% of the lockup height above its bottom edge (y=68 of 100);
+// the menu baseline sits ~8px above the link's bottom (DM Sans descender at 16px + 4px
+// padding). Pulling the lockup down by the difference aligns the two baselines.
+$lockup-height: 62px;
+$lockup-height-mobile: 48px;
+$menu-baseline-offset: 8px;
+
+.brand-lockup {
+  display: block;
+  height: $lockup-height;
+  width: auto;
+  margin-bottom: -(0.32 * $lockup-height - $menu-baseline-offset);
+
+  @media only screen and (max-width: $mobile) {
+    height: $lockup-height-mobile;
+    margin-bottom: 0;
+  }
 }
 
 /* Nav */
@@ -77,7 +85,7 @@
           }
 
           &.nav__link--current {
-            color: var(--brand-color);
+            color: var(--brand-color-text);
 
             &::after {
               content: none;
@@ -373,12 +381,12 @@
   transition: all 0.25s ease;
 
   &:hover {
-    color: var(--brand-color);
+    color: var(--brand-color-text);
     background: var(--background-color);
   }
 
   &.submenu__link--current {
-    color: var(--brand-color);
+    color: var(--brand-color-text);
   }
 
   @media only screen and (max-width: $desktop) {
