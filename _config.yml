@@ -41,6 +41,8 @@ collections:
   phd_music:
     output: true
     permalink: /phd/materials/:title/
+  events:
+    output: false
 
 sass:
   sass_dir: _sass

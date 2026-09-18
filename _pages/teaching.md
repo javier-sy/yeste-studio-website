@@ -7,46 +7,22 @@ image: /images/teaching.jpg
 
 # Docencia
 
-## Universitat de Barcelona — desde el curso 2021-22
-
-### Postproducción de audio
-
-_Mezcla y masterización digital_ aplicada a audio multicanal para instalaciones sonoras.
-
-Màster en Art Sonor (máster propio, 2 cursos), Universitat de Barcelona. Profesor colaborador.
+{% assign kinds = "course" | split: "," %}
+{% assign events = site.events | sort: "date" | reverse %}
+{% for event in events %}
+{%- assign shown = event.activities | where_exp: "a", "kinds contains a.kind" -%}
+{%- if shown.size > 0 %}
+{% include event.html event=event kinds=kinds other_url="/shows" other_label="Shows" %}
+{%- endif %}
+{% endfor %}
 
 # Clases invitadas y charlas
 
-# ESMUC, Barcelona, 2026-07-01
-
-## TECSMUC: presentación de MusaDSL y Nota
-
-Jornada de tecnología de la ESMUC. Presentación del lenguaje de composición algorítmica MusaDSL y de Nota, el asistente de composición con IA construido sobre él, junto a la difusión de *Espiral* en 12 altavoces.
-
-**Ver también:** [Shows](/shows)
-
-# ESMUC, Barcelona, 2026-04-30
-
-## Clase invitada: MusaDSL, Nota y composición algorítmica
-
-Asignatura *Composició assistida per ordinador*, 2º curso del Grau de Composició. Clase invitada de hora y media.
-
-# ESMUC, Barcelona, 2026-04-10
-
-## Mesa redonda: AI in higher music education — dangers, challenges, and opportunities
-
-*Jornades ab Sentits*, 8ª edición: *Música i Representació* (9–11 de abril de 2026), en la Sala de Teclats del Museu de la Música. Mesa redonda coordinada por Rolf Bäcker, con Rubén López-Cano, Félix Pastor y Javier Sánchez Yeste.
-
-# ESMUC, Barcelona, 2026-03-17
-
-## Clase invitada: MusaDSL, Nota y composición algorítmica
-
-Màster Propi de Composició amb Tecnologies. Clase invitada de dos horas.
-
-# Universidad del País Vasco, Leioa (Bizkaia), 2022-11-23
-
-## Conferencia y debate sobre composición algorítmica y espacialización
-
-Facultad de Bellas Artes. Conferencia y debate con Mikel Arce, sobre composición algorítmica, lenguajes de programación como medio expresivo y espacialización de audio, en el mismo acto en que se estrenó *Espiral* en su versión original de 16 canales.
-
-**Ver también:** [Shows](/shows)
+{% assign kinds = "talk,lecture,panel" | split: "," %}
+{% assign events = site.events | sort: "date" | reverse %}
+{% for event in events %}
+{%- assign shown = event.activities | where_exp: "a", "kinds contains a.kind" -%}
+{%- if shown.size > 0 %}
+{% include event.html event=event kinds=kinds other_url="/shows" other_label="Shows" %}
+{%- endif %}
+{% endfor %}

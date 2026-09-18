@@ -1,0 +1,43 @@
+{%- comment -%}
+One event (a date at a place) with the activities of the kinds this page shows.
+  event       a document from _events/
+  kinds       array of activity kinds to show (performance | talk | lecture | panel | course)
+  other_url / other_label   where the event's remaining activities are listed
+{%- endcomment -%}
+{%- assign shown = include.event.activities | where_exp: "a", "include.kinds contains a.kind" -%}
+{%- assign hidden = 0 -%}
+{%- for a in include.event.activities -%}
+  {%- unless include.kinds contains a.kind -%}{%- assign hidden = hidden | plus: 1 -%}{%- endunless -%}
+{%- endfor -%}
+<article class="event">
+  <div class="event__when">
+    <p class="event__date">{% if include.event.date_label %}{{ include.event.date_label }}{% elsif include.event.date_precision == "month" %}{{ include.event.date | date: "%m-%Y" }}{% else %}{{ include.event.date | date: "%d-%m-%Y" }}{% endif %}</p>
+    <p class="event__place">{{ include.event.place }}<br><strong>{{ include.event.city }}</strong></p>
+  </div>
+  <div class="event__body">
+    <h2>{{ include.event.title }}</h2>
+    {%- if include.event.intro %}
+    {{ include.event.intro | markdownify }}
+    {%- endif %}
+    {%- if include.event.image %}
+    <p><img src="{{ include.event.image | relative_url }}" alt=""></p>
+    {%- endif %}
+    {%- for a in shown %}
+    {%- if a.kind == "performance" %}{%- assign work = site.works | where: "slug", a.work | first %}{%- endif %}
+    <h3>{{ a.title }}</h3>
+    {%- if a.kind == "performance" %}
+    <p class="meta">{{ work.composer }} · {{ work.year }} · {{ a.duration }}</p>
+    {%- endif %}
+    {%- if a.image %}
+    <p><img src="{{ a.image | relative_url }}" alt=""></p>
+    {%- endif %}
+    {{ a.text | markdownify }}
+    {%- if a.kind == "performance" %}
+    <p><strong>Versión online:</strong> <a href="{{ work.url }}">{{ work.title }}</a> - {{ a.online }}.</p>
+    {%- endif %}
+    {%- endfor %}
+    {%- if hidden > 0 %}
+    <p class="event__also"><strong>Ver también:</strong> <a href="{{ include.other_url }}">{{ include.other_label }}</a></p>
+    {%- endif %}
+  </div>
+</article>
