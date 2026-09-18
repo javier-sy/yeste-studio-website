@@ -1,9 +1,8 @@
 #-------------------------------
 # Site Settings
 title: yeste.studio
-logo: # You can add own logo. For example '/images/logo.png'.
-author: Javier Sánchez Yeste
-description: Artistic website for Javier Sánchez Yeste
+author: yeste.studio
+description: 'yeste.studio - studio, lab & workshop for research and creation in sound and music: works, tools, teaching.'
 
 #-------------------------------
 # Menu Settings
@@ -26,19 +25,12 @@ menu__settings:
           url: 'phd/thesis'
         - title: 'Materiales de audio'
           url: 'phd/materials'
-    - title: 'Bio'
-      url: 'bio'
+    - title: 'About'
+      url: 'about'
     - title: 'Contact'
       url: 'contact'
 #    - title: 'Blog'
 #      url: 'blog'
-
-
-#-------------------------------
-# Hero Settings
-hero:
-  hero__title:
-  hero__description: 'In this website you can find the work of Javier Sánchez Yeste:'
 
 
 #-------------------------------

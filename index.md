@@ -3,12 +3,12 @@ layout: page
 image: /images/home.png
 #title: Home
 ---
-**Welcome to [yeste.studio](/) artistic works website**
+**[yeste.studio](/)** is a (mostly individual) studio lab & workshop for research and creation in algorithmic sound and music.
 
 Here you can find:
-- Some *[sound and musical works](works)*.
-- The *[shows where yeste.studio has performed sound and musical works](shows)*.
+- The *[sound and musical works](works)* produced by yeste.studio.
+- The *[shows](shows)* where they have been performed.
 - The *[teaching, guest lectures and talks](teaching)* on algorithmic composition.
-- The *[software yeste.studio has developed](software)* and used in his works.
-- The *[doctoral research](phd/thesis)* behind all of it, and its *[audio materials](phd/materials)*.
-- And a small bio of *[the person behind](bio)* yeste.studio.
+- The *[software](software)* built by yeste.studio and used in its works.
+- The *[doctoral research](phd/thesis)* of the author behind all of it.
+- And *[about](about)* the person behind yeste.studio.

@@ -2,6 +2,8 @@
 layout: page
 title: Política de privacidad y adecuación al Reglamento General de Protección de Datos (RGPD)
 permalink: politica-de-privacidad
+noindex: true
+sitemap: false
 ---
 # Política de privacidad
 

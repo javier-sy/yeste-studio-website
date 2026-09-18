@@ -1,7 +1,7 @@
 ---
 layout: music
 title: "The Washing Machine (Material Original)"
-composer: "Javier Sánchez Yeste"
+composer: "yeste.studio"
 duration: "10:00"
 year: 2017
 techniques:

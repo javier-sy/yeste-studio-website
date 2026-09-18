@@ -16,7 +16,7 @@ Exploración de composición algorítmica en MusaDSL, síntesis granular y gener
 {% assign washing_machine_works = site.phd_music | where_exp: "item", "item.title contains 'Washing Machine'" | sort: "year" | reverse %}
 {% for work in washing_machine_works %}
 ### [{{ work.title }}]({{ work.url }})
-**{{ work.year }}** • {{ work.duration }}
+<p class="meta">{{ work.composer }} · {{ work.year }} · {{ work.duration }}</p>
 {{ work.description }}
 {% endfor %}
 
@@ -29,7 +29,7 @@ Microscopio sonoro: expansión temporal extrema (~X100) de grabaciones de campo 
 {% assign elevator_works = site.phd_music | where_exp: "item", "item.title contains 'Elevator'" | sort: "duration" | reverse %}
 {% for work in elevator_works %}
 ### [{{ work.title }}]({{ work.url }})
-**{{ work.year }}** • {{ work.duration }}
+<p class="meta">{{ work.composer }} · {{ work.year }} · {{ work.duration }}</p>
 {{ work.description }}
 {% endfor %}
 
@@ -42,7 +42,7 @@ Proyección espacial de espirales tridimensionales rotadas y distorsionadas sobr
 {% assign espiral_works = site.phd_music | where_exp: "item", "item.project == 'Espiral'" | sort: "year" %}
 {% for work in espiral_works %}
 ### [{{ work.title }}]({{ work.url }})
-**{{ work.year }}** • {{ work.duration }}
+<p class="meta">{{ work.composer }} · {{ work.year }} · {{ work.duration }}</p>
 {{ work.description }}
 {% endfor %}
 
@@ -55,7 +55,7 @@ Gramáticas generativas aplicadas a la exploración de características percepti
 {% assign clave_works = site.phd_music | where_exp: "item", "item.title contains 'Clave'" %}
 {% for work in clave_works %}
 ### [{{ work.title }}]({{ work.url }})
-**{{ work.year }}** • {{ work.duration }}
+<p class="meta">{{ work.composer }} · {{ work.year }} · {{ work.duration }}</p>
 {{ work.description }}
 {% endfor %}
 

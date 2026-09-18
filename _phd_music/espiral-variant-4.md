@@ -1,7 +1,7 @@
 ---
 layout: music
 title: "Espiral (Variante 4)"
-composer: "Javier Sánchez Yeste"
+composer: "yeste.studio"
 duration: "24:44"
 year: 2024
 techniques:

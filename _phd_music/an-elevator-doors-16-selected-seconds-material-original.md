@@ -1,7 +1,7 @@
 ---
 layout: music
 title: "An Elevator Door's 16 Selected Seconds (Material Original 19s)"
-composer: "Javier Sánchez Yeste"
+composer: "yeste.studio"
 duration: "0:19"
 year: 2017
 techniques:

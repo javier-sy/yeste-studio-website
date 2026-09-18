@@ -1,6 +1,8 @@
 ---
 layout: music
 title: "An Elevator Door's 16 Selected Seconds"
+composer: "yeste.studio"
+duration: "29:40"
 year: 2018
 year_remix: 2023
 category: algorithmic
@@ -22,6 +24,6 @@ The evolving loop keeps the sound in the frontier between the rhythmic pulses, t
 Harmonies generated through the reproduction of microloops with sample-rates of harmonic multiples.
 Exploration of the timbre-harmony binomial.
 
-Created with MusaDSL, Max/MSP, Ableton Live and remixed in Bitwig Studio.
+Created with [MusaDSL](https://musadsl.yeste.studio), Max/MSP, Ableton Live and remixed in Bitwig Studio.
 
 Listen with headphones!

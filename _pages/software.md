@@ -7,11 +7,11 @@ image: /images/software.png
 
 # MusaDSL
 
-Soy el autor de MusaDSL, un lenguaje de dominio específico de código abierto basado en Ruby, diseñado para la composición sonora y musical algorítmica.
+MusaDSL es un lenguaje de dominio específico de código abierto basado en Ruby, diseñado para la composición sonora y musical algorítmica. Nació en el estudio para componer: cada obra ha pedido capacidades que el lenguaje no tenía, y el lenguaje, al ganarlas, ha abierto caminos que antes no estaban a la vista.
 
 MusaDSL separa la lógica compositiva del renderizado de audio, permitiendo crear estructuras musicales complejas de forma independiente a los sintetizadores o DAWs utilizados. Esta arquitectura facilita la exploración de sistemas generativos, la composición algorítmica y el live coding.
 
-Utilizo MusaDSL en diversas de mis obras, como *Espiral*, *El Bosque*, *Piezoreflections* o el *Estudio Fibonacci*.
+Obras compuestas con MusaDSL: *Espiral*, *El Bosque*, *Piezoreflections* o el *Estudio Fibonacci*.
 
 ## Características principales
 

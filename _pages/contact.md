@@ -6,10 +6,8 @@ image: /images/phone.jpg
 image_attribution: 'Photo by <a href="https://unsplash.com/@antoinebarres?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Antoine Barrès</a> on <a href="https://unsplash.com/s/photos/phones-old?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
 '
 ---
-If you want to send me a note please email me to
-<a href="mailto:javier@yeste.studio">javier@yeste.studio</a>.
+Write to <a href="mailto:javier@yeste.studio">javier@yeste.studio</a>.
 
-I am available for **guest lectures, workshops and teaching** on algorithmic
+Available for **guest lectures, workshops and teaching** on algorithmic
 composition and sound, and for **consulting** on composition tools, audio
 software and AI applied to music creation. Write with what you have in mind.
- 

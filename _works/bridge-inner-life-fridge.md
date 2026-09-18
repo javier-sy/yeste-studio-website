@@ -1,6 +1,8 @@
 ---
 layout: music
 title: "A Bridge to the Inner Life of a Fridge"
+composer: "yeste.studio"
+duration: "12:14"
 year: 2017
 category: soundscape
 audio_file: "/audio/works/bridge-inner-life-fridge.mp3"

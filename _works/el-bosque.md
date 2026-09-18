@@ -1,6 +1,8 @@
 ---
 layout: music
 title: "El Bosque"
+composer: "yeste.studio"
+duration: "13:58"
 year: 2019
 category: algorithmic
 audio_file: "/audio/works/el-bosque.mp3"
@@ -14,4 +16,4 @@ order: 3
 
 Stereo reduction of the original work for 24 channels premiered in Festival Zeppelin 2019 (CCCB, Barcelona).
 
-Created with MusaDSL, Max/MSP and Ableton Live.
+Created with [MusaDSL](https://musadsl.yeste.studio), Max/MSP and Ableton Live.

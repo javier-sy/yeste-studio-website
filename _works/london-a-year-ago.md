@@ -1,6 +1,8 @@
 ---
 layout: music
 title: "London, a year ago"
+composer: "yeste.studio"
+duration: "13:39"
 year: 2018
 category: soundscape
 audio_file: "/audio/works/london-a-year-ago.mp3"

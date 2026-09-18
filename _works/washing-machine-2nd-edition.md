@@ -1,6 +1,8 @@
 ---
 layout: music
 title: "The Washing Machine"
+composer: "yeste.studio"
+duration: "10:03"
 year: 2016
 year_remix: 2018
 category: algorithmic
@@ -15,4 +17,4 @@ order: 7
 
 Second edition (2018): new mix and remaster of the original 2016 composition.
 
-Created with MusaDSL, Supercollider and Ableton Live.
+Created with [MusaDSL](https://musadsl.yeste.studio), Supercollider and Ableton Live.

@@ -1,11 +1,11 @@
 ---
 layout: page
-title: Bio
-permalink: bio
+title: About
+permalink: about
 image: /images/bio.jpg
 ---
 
-[yeste.studio](https://yeste.studio) is **Javier Sánchez Yeste** (1974).
+[yeste.studio](https://yeste.studio) is the studio lab & workshop of **Javier Sánchez Yeste**.
 
 Sound explorer, software engineer, coder, with a degree in Psychology, trained in harmony and composition and postgraduate in sound art. His artistic work explores the aesthetic consequences of algorithmically generated sound structures and their interaction - and interference - with processes that are not algorithmic. He is completing a PhD in Fine Arts at the Universitat de Barcelona, expected in 2026, on programming languages as cognitive tools for sound and music composition.
 

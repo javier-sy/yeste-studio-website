@@ -1,7 +1,7 @@
 ---
 layout: music
 title: "2019-01-22 Estudio para Clave nº1"
-composer: "Javier Sánchez Yeste"
+composer: "yeste.studio"
 duration: "0:46"
 year: 2019
 techniques:

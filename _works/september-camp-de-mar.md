@@ -1,6 +1,8 @@
 ---
 layout: music
 title: "September in Camp de Mar"
+composer: "yeste.studio"
+duration: "5:25"
 year: 2016
 category: soundscape
 audio_file: "/audio/works/september-camp-de-mar.mp3"

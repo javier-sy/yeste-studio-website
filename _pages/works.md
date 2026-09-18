@@ -6,11 +6,13 @@ image: /images/works.jpg
 ---
 # Algorithmic Works
 
-Sound works created mostly with MusaDSL and rendered with Max/MSP, Supercollider, Ableton Live and Bitwig Studio.
+Sound works created mostly with [MusaDSL](https://musadsl.yeste.studio) and rendered with Max/MSP, Supercollider, Ableton Live and Bitwig Studio.
 
 {% assign algorithmic_works = site.works | where: "category", "algorithmic" | sort: "order" %}
 {% for work in algorithmic_works %}
-## [{{ work.title }}]({{ work.url }}){% if work.year_remix %} ({{ work.year }}, remixed on {{ work.year_remix }}){% else %} ({{ work.year }}){% endif %}
+## [{{ work.title }}]({{ work.url }})
+
+<p class="meta">{{ work.composer }} · {{ work.year }}{% if work.year_remix %}, remixed {{ work.year_remix }}{% endif %} · {{ work.duration }}</p>
 
 {{ work.content | markdownify }}
 
@@ -24,7 +26,9 @@ Sound works created mostly with MusaDSL and rendered with Max/MSP, Supercollider
 
 {% assign soundscape_works = site.works | where: "category", "soundscape" | sort: "order" %}
 {% for work in soundscape_works %}
-## [{{ work.title }}]({{ work.url }}) ({{ work.year }})
+## [{{ work.title }}]({{ work.url }})
+
+<p class="meta">{{ work.composer }} · {{ work.year }} · {{ work.duration }}</p>
 
 {{ work.content | markdownify }}
 
