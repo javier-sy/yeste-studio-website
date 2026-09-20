@@ -41,7 +41,8 @@ in this repo; check before duplicating.
 - `_layouts/` - HTML templates (`works.html` and `music.html` include WaveSurfer.js players)
 - `_includes/` - Reusable components (`wavesurfer-player.html` for inline audio players)
 - `_sass/` - ITCSS-structured stylesheets (0-settings, 1-tools, 2-base, 3-modules, 4-layouts)
-- `_data/settings.yml` - Site config: menus, social links, contact email, analytics ID
+- `_data/settings.yml` - Site config: menus, social links, contact email, GA4 measurement ID
+- `_data/cookies.yml` - Cookie register: feeds the cookie policy's table and the consent version
 - `audio/` - MP3 files (works/, phd/)
 - `_plugins/soundcloud-plugin.rb` - Custom `{% soundcloud ID %}` Liquid tag
 
@@ -104,6 +105,17 @@ activities:
 
 `_includes/brand/lockup.svg` (the header) and the favicon set at the site root are generated
 from the brand masters by `../yeste-studio-theme/scripts/sync-brand.sh`; never edit them by hand.
+
+### Analytics and Cookie Consent
+
+Google Analytics loads only after the visitor accepts, through the consent bar
+(`_includes/cookie-consent.html`, `js/consent.js`, `_sass/3-modules/_cookie-consent.scss`).
+Those three files and `_includes/cookies-table.html` are copies of the theme's, refreshed by
+`../yeste-studio-theme/scripts/sync-consent.sh`: edit them in the theme, then run it. The
+consent cookie is shared by the four sites on `.yeste.studio`; its contract, the legal
+requirements and the verification steps are in `../yeste-studio-theme/docs/cookie-consent.md`.
+`_data/cookies.yml` is this site's own register (it adds `classView`): a change to a
+non-exempt entry bumps its `version` so every visitor is asked again.
 
 ### Styling
 

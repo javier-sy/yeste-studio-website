@@ -87,4 +87,6 @@ contact:
 
 #-------------------------------
 # Google Analytics
-google-analytics: G-RSN5GV4Y4T # Add your identifier. For example UA-99631805-1.
+# GA4 measurement ID, shared by the four yeste.studio sites. Loaded only after the visitor accepts
+# analytics cookies (js/consent.js); remove it and there is no banner and no analytics.
+google-analytics: G-RSN5GV4Y4T
