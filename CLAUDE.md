@@ -117,6 +117,15 @@ requirements and the verification steps are in `../yeste-studio-theme/docs/cooki
 `_data/cookies.yml` is this site's own register (it adds `classView`): a change to a
 non-exempt entry bumps its `version` so every visitor is asked again.
 
+### Third-party resources
+
+None at page load: fonts (`assets/fonts`, `_sass/0-settings/_fonts.scss`) and Ionicons
+(`assets/vendor/ionicons`) are copies of the theme's, refreshed by
+`../yeste-studio-theme/scripts/sync-vendor.sh`; WaveSurfer.js is this site's own copy in
+`assets/vendor/wavesurfer` (pinned version, BSD-3). A visitor's browser contacts only GitHub
+Pages and, after accepting cookies, Google Analytics. Don't add a CDN script or font without
+revisiting `../yeste-studio-theme/docs/cookie-consent.md`.
+
 ### Styling
 
 CSS custom properties enable dark/light mode (`_sass/0-settings/_color-scheme.scss`). Brand color: `#279b44` (`--brand-color`; `--brand-color-text` is the same hue darkened for text on light backgrounds). Theme toggle persists via localStorage.
