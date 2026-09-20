@@ -11,3 +11,7 @@ Write to <a href="mailto:javier@yeste.studio">javier@yeste.studio</a>.
 Available for **guest lectures, workshops and teaching** on algorithmic
 composition and sound, and for **consulting** on composition tools, audio
 software and AI applied to music creation. Write with what you have in mind.
+
+Also for a **commercial license** of yeste.studio software when its own
+license does not cover your case - for instance, inside a closed product.
+Say which product and what you want to build.

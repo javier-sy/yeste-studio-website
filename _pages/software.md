@@ -27,7 +27,7 @@ Obras compuestas con MusaDSL: *Espiral*, *El Bosque*, *Piezoreflections* o el *E
 - **Comunicaciones MIDI** multiplataforma para conexión con instrumentos y controladores
 - **Gestión polifónica MIDI** con asignación automática de voces
 
-Licencia **LGPL 3.0** o **GPL 3.0** según componente.
+Licencia **GPL 3.0 o posterior**; licencia comercial disponible ([contactar](/contact)).
 
 🌐 [musadsl.yeste.studio](https://musadsl.yeste.studio)
 
@@ -37,7 +37,7 @@ MusaLCE es el entorno de live coding de MusaDSL: permite escribir Ruby en el edi
 
 Soporta dos vías de uso - un REPL standalone que tú instancias para destinos arbitrarios (SuperCollider, Max/MSP, OSC), y una integración llave-en-mano con Ableton Live o Bitwig Studio a través de `musalce-server` y una extensión específica del DAW.
 
-Licencia **LGPL 3.0**.
+Licencia **GPL 3.0 o posterior**; licencia comercial disponible ([contactar](/contact)).
 
 🌐 [musalce.yeste.studio](https://musalce.yeste.studio)
 
@@ -47,7 +47,7 @@ Nota es un plugin para [Claude Code](https://claude.ai/code) y [opencode](https:
 
 Nota incorpora una base de conocimiento semántica que cubre toda la documentación, la referencia de API y más de 20 proyectos de demostración. A medida que el compositor indexa sus obras (`/nota:index`) y extrae buenas prácticas (`/nota:best-practices`), el asistente se enriquece con ese conocimiento personal. Cada paso alimenta al siguiente, formando un ciclo creativo continuo.
 
-**Gratuito**, con licencia propietaria: se licencia para usarlo, no para copiarlo, modificarlo ni redistribuirlo. Lo que compongas con él es tuyo, sin condición.
+**Gratuito**, con licencia propietaria: se licencia para usarlo, no para copiarlo, modificarlo ni redistribuirlo. Lo que compongas con él es tuyo, sin condición por parte de Nota; el código que use MusaDSL sigue la licencia de MusaDSL, como cualquier otro. Licencia comercial disponible ([contactar](/contact)).
 
 🌐 [nota.yeste.studio](https://nota.yeste.studio)
 
