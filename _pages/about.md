@@ -2,7 +2,7 @@
 layout: page
 title: About
 permalink: about
-image: /images/bio.jpg
+image: /images/about.jpg
 ---
 
 [yeste.studio](https://yeste.studio) is the studio lab & workshop of **Javier Sánchez Yeste**.
