@@ -17,6 +17,7 @@
             </div>
             <div class="nav__title">Menu</div>
             <ul class="nav__list list-reset">
+              <li class="nav__gap" aria-hidden="true"></li>
               {% for item in site.data.settings.menu__settings.menu__items %}
                 {%- assign item_url = item.url | relative_url -%}
                 {%- assign is_current = false -%}
@@ -30,7 +31,11 @@
                     {%- assign is_current = true -%}
                   {%- endif -%}
                 {%- endfor -%}
-                <li class="nav__item{% if item.submenu %} has-submenu{% endif %}">
+                {%- if item.group %}
+                <li class="nav__rule" aria-hidden="true"></li>
+                <li class="nav__gap" aria-hidden="true"></li>
+                {%- endif %}
+                <li class="nav__item{% if item.submenu %} has-submenu{% endif %}{% if item.group %} nav__item--group{% endif %}">
                   <a href="{% if item.submenu %}#{% else %}{{ item_url }}{% endif %}" class="nav__link{% if is_current %} nav__link--current{% endif %}">
                     {{ item.title }}
                     {% if item.submenu %}
@@ -47,6 +52,7 @@
                     </ul>
                   {% endif %}
                 </li>
+                <li class="nav__gap" aria-hidden="true"></li>
               {% endfor %}
               <li class="nav__item">
                 <div class="toggle-theme">
@@ -78,7 +84,7 @@ document.addEventListener('DOMContentLoaded', function() {
       // A parent of a submenu is not a destination: it never navigates.
       e.preventDefault();
       // On mobile/tablet (when nav is overlay) it also opens the submenu.
-      if (window.innerWidth <= 1024) {
+      if (window.innerWidth <= 1140) { // $menu-collapse in _header.scss
         this.parentElement.classList.toggle('submenu-open');
       }
     });
