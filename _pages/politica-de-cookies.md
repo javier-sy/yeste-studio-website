@@ -1,4 +1,5 @@
 ---
+lang: es
 layout: page
 title: Política de cookies
 permalink: politica-de-cookies

@@ -1,4 +1,5 @@
 ---
+lang: es
 layout: page
 title: Teaching & Talks
 permalink: teaching

@@ -1,4 +1,5 @@
 ---
+lang: es
 layout: page
 title: Materiales de audio
 permalink: /phd/materials

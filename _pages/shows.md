@@ -1,4 +1,5 @@
 ---
+lang: es
 layout: page
 title: Shows
 permalink: shows

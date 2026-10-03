@@ -22,16 +22,24 @@ defaults:
       type: news
     values:
       layout: news
+      lang: es
+  - scope:
+      type: phd_music
+    values:
+      lang: es
   - scope:
       type: letters
     values:
       layout: letter
+      lang: es
 
 include:
   - _pages
 
 exclude:
   - .idea/
+  - CLAUDE.md
+  - scripts/
 
 # Collections
 collections:

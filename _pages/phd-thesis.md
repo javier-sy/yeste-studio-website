@@ -1,4 +1,5 @@
 ---
+lang: es
 layout: page
 title: Tesis doctoral
 permalink: /phd/thesis

@@ -1,4 +1,5 @@
 ---
+lang: es
 layout: page
 title: Condiciones generales de acceso y uso del sitio web yeste.studio
 permalink: condiciones-de-uso
