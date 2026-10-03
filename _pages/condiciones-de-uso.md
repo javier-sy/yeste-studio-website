@@ -7,8 +7,7 @@ sitemap: false
 ---
 El sitio web [yeste.studio](https://yeste.studio) es propiedad de Javier Sánchez Yeste
 (en adelante el titular del sitio web) con dirección de correo electrónico
-javier@artmusic.coach, y a través del mismo proporciona información sobre sus actividades.
-
+javier@yeste.studio, y a través del mismo proporciona información sobre sus actividades.
 
 El acceso y uso del sitio web atribuye al que lo realiza la condición de “Usuario de la web” e implica la aceptación íntegra,
 expresa y sin reservas de las presentes condiciones generales, vigentes en el momento del acceso. Si el usuario no
@@ -39,10 +38,10 @@ intelectual, etc.), o la legalidad vigente.
   de daño a los sistemas de [yeste.studio](https://yeste.studio).
 
 - Realizar sin la debida autorización cualquier tipo de publicidad o información comercial directamente o de forma
-  encubierta, el envío de correos masivos ("spaming") o envío de grandes mensajes con el fin de bloquear
+  encubierta, el envío de correos masivos ("spamming") o envío de grandes mensajes con el fin de bloquear
   servidores de la red ("mail bombing").
 
-El usuario se compromete no a utilizar el sitio web, ni los contenidos o información y/o los servicios que se ofrecen
+El usuario se compromete a no utilizar el sitio web, ni los contenidos o información y/o los servicios que se ofrecen
 en el mismo para la realización de actividades contrarias a la ley y a respetar en todo momento las presentes
 condiciones generales.
 
@@ -63,14 +62,6 @@ El titular del sitio web se reserva el derecho a modificar en cualquier momento 
 
 El titular del sitio web no asegura ni se responsabiliza del correcto funcionamiento de los enlaces a sitios web
 de terceros que figuren en [yeste.studio](https://yeste.studio).
-
-<!---
-Además, a través del sitio web [artmusic.coach](https://artmusic.coach), pueden ponerse a disposición de los usuarios,
-servicios gratuitos y/o de pago ofrecidos por terceros ajenos, los cuáles se regirán por las condiciones particulares de
-dichos servicios. El titular del sitio web no garantiza en ningún caso la veracidad, exactitud o actualidad de los contenidos
-y servicios ofrecidos por terceros y queda expresamente exonerado de cualquier tipo de responsabilidad por los daños
-y perjuicios que puedan derivarse de la falta de exactitud de estos contenidos y servicios.
---->
 
 ## Responsabilidad
 
@@ -103,12 +94,6 @@ del titular del sitio web.
 hiperenlaces a artículos o informaciones de terceros citando siempre la fuente. El legítimo titular de los
 derechos de autor de las informaciones así incluidas podrá solicitar en cualquier momento la eliminación de los
 referidos contenidos.
-
-<!---
-Los materiales tanto gráficos como escritos enviados por los usuarios a través de los medios que se ponen a su
-disposición en el sitio web son propiedad del usuario quien afirma al enviarlos su legítima autoría y cede los
-derechos de reproducción y distribución a [artmusic.coach](https://artmusic.coach).
---->
 
 ## Jurisdicción y ley aplicable
 

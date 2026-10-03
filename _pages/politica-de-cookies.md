@@ -51,7 +51,7 @@ Sí. En la configuración de tu navegador puedes ver y borrar las cookies asocia
 
 - [Google Chrome](https://support.google.com/chrome/answer/95647?hl=es)
 - [Apple Safari](https://support.apple.com/es-es/HT201265)
-- [Microsoft Edge](https://support.microsoft.com/es-es/microsoft-edge/eliminar-las-cookies-en-microsoft-edge-63947406-6c2b-9b38-f8e3-c7a03d5ca6a5)
+- [Microsoft Edge](https://support.microsoft.com/es-es/microsoft-edge/eliminar-las-cookies-en-microsoft-edge-63947406-40ac-c3b8-57b9-2a946a29ae09)
 - [Mozilla Firefox](https://support.mozilla.org/es/kb/habilitar-y-deshabilitar-cookies-sitios-web-rastrear-preferencias)
 
 ## Más información sobre las cookies
