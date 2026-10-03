@@ -3,12 +3,16 @@ layout: null
 sitemap: false
 ---
 {%- comment -%}
-Every news item, newest first, for the product sites' News sections: their Pages workflow fetches
-this file before building (../yeste-studio-theme/docs/news.md has the contract).
+Every news item, newest first, for the product sites: their News section, news page and feed.
+Their Pages workflow fetches this file before building (../yeste-studio-theme/docs/news.md has
+the contract). `content` is the item's HTML with links made absolute, since it is shown on
+another domain.
 {%- endcomment -%}
 {%- assign items = site.news | sort: "date" | reverse -%}
+{%- capture href_root %}href="{{ "/" | absolute_url }}{% endcapture -%}
+{%- capture src_root %}src="{{ "/" | absolute_url }}{% endcapture -%}
 [
 {%- for item in items %}
-  {"title": {{ item.title | jsonify }}, "date": "{{ item.date | date: '%Y-%m-%d' }}", "url": {{ item.url | absolute_url | jsonify }}, "topics": {{ item.topics | jsonify }}, "summary": {{ item.summary | jsonify }}, "lang": {{ item.lang | default: "es" | jsonify }}}{% unless forloop.last %},{% endunless %}
+  {"title": {{ item.title | jsonify }}, "date": "{{ item.date | date: '%Y-%m-%d' }}", "url": {{ item.url | absolute_url | jsonify }}, "topics": {{ item.topics | jsonify }}, "summary": {{ item.summary | jsonify }}, "lang": {{ item.lang | default: "es" | jsonify }}, "slug": {{ item.slug | jsonify }}, "content": {{ item.content | replace: 'href="/', href_root | replace: 'src="/', src_root | jsonify }}}{% unless forloop.last %},{% endunless %}
 {%- endfor %}
 ]
