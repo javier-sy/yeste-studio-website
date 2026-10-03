@@ -74,8 +74,13 @@
     const loadingText = loadingEl.querySelector('.loading-text');
     const loadingBar = loadingEl.querySelector('.loading-bar');
 
+    // The waveform comes from the precomputed <name>.json beside the mp3 (scripts/audio-peaks.py);
+    // the audio itself is fetched only when the visitor plays it.
+    const media = document.createElement('audio');
+    media.preload = 'none';
     const wavesurfer = WaveSurfer.create({
       container: waveformEl,
+      media: media,
       waveColor: 'var(--text-color)',
       progressColor: 'var(--brand-color)',
       cursorColor: 'var(--brand-color)',
@@ -88,7 +93,13 @@
       normalize: true
     });
 
-    wavesurfer.load(audioFile);
+    fetch(audioFile.replace(/\.mp3$/, '.json'))
+      .then(function(response) { return response.ok ? response.json() : Promise.reject(response.status); })
+      .then(function(waveform) { wavesurfer.load(audioFile, [waveform.peaks], waveform.duration); })
+      .catch(function() {
+        console.warn('No precomputed waveform for ' + audioFile + ': run scripts/audio-peaks.py');
+        wavesurfer.load(audioFile);
+      });
 
     // Loading progress
     wavesurfer.on('loading', function(percent) {

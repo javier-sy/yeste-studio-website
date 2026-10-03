@@ -4,7 +4,7 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 
 ## Project Overview
 
-Website of yeste.studio, a studio, lab & workshop for research and creation in sound and music. The site showcases algorithmic compositions, performances, PhD research materials, and MusaDSL (a domain-specific language for algorithmic composition).
+Website of yeste.studio, a studio lab & workshop for research and creation in sound and music. The site showcases algorithmic compositions, performances, PhD research materials, and MusaDSL (a domain-specific language for algorithmic composition).
 
 Live site: https://yeste.studio/
 
@@ -56,6 +56,11 @@ Two WaveSurfer.js implementations:
 2. **Full-page player** (`_layouts/music.html`) - Individual PhD track pages
 
 Both support: waveform visualization, play/pause, time display, volume control, loading indicator, dark mode colors.
+
+Both draw the waveform from `audio/<dir>/<name>.json`, beside each mp3, and fetch the mp3 only when
+it plays: decoding every file to draw it made `/works` download hundreds of MB on opening. After
+adding or replacing an mp3, run `scripts/audio-peaks.py` (needs ffmpeg) and commit the `.json`;
+without it the player falls back to loading the whole file.
 
 ### PhD Music Collection
 
@@ -160,6 +165,7 @@ Automated via GitHub Actions (`.github/workflows/github-pages.yml`). Push to `ma
 
 ## Content Guidelines
 
-- Audio files: MP3 format, 320kbps quality
+- Audio files: MP3 format, 320kbps quality, each with its waveform `.json` (`scripts/audio-peaks.py`)
+- Images: at most 1600 px on the long side; the original goes to `_images-original/` (same path, not in git)
 - Site language: Mixed Spanish/English (Spanish for legal pages, PhD thesis, news and letters; English for works, bio and the interface)
 - MusaDSL documentation lives at external site musadsl.yeste.studio
