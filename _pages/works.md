@@ -6,7 +6,7 @@ image: /images/works.jpg
 ---
 # Algorithmic Works
 
-Sound works created mostly with [MusaDSL](https://musadsl.yeste.studio) and rendered with Max/MSP, Supercollider, Ableton Live and Bitwig Studio.
+Sound works created mostly with [MusaDSL](https://musadsl.yeste.studio) and rendered with Max/MSP, SuperCollider, Ableton Live and Bitwig Studio.
 
 {% assign algorithmic_works = site.works | where: "category", "algorithmic" | sort: "order" %}
 {% for work in algorithmic_works %}

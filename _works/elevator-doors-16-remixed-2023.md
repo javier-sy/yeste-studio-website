@@ -20,7 +20,7 @@ New remixed stereo version of the original 12 channels 'An Elevator Door's 16 Se
 
 Open the door. Open the inner doors. Close the door. Close the inner doors. Press the button. Going up. Reverse repeat.
 16 seconds of sound events traveled, millisecond to millisecond, through microscopic samples with durations between 0.1ms and 84ms.
-The evolving loop keeps the sound in the frontier between the rhythmic pulses, the continous tone and a draft of perceptual event.
+The evolving loop keeps the sound in the frontier between the rhythmic pulses, the continuous tone and a draft of perceptual event.
 Harmonies generated through the reproduction of microloops with sample-rates of harmonic multiples.
 Exploration of the timbre-harmony binomial.
 

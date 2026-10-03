@@ -10,11 +10,11 @@ audio_file: "/audio/works/washing-machine-2nd-edition.mp3"
 image_file: "/images/works/washing-machine-2nd-edition.jpg"
 techniques:
   - MusaDSL
-  - Supercollider
+  - SuperCollider
   - Ableton Live
 order: 7
 ---
 
 Second edition (2018): new mix and remaster of the original 2016 composition.
 
-Created with [MusaDSL](https://musadsl.yeste.studio), Supercollider and Ableton Live.
+Created with [MusaDSL](https://musadsl.yeste.studio), SuperCollider and Ableton Live.

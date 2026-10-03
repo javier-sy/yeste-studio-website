@@ -34,7 +34,7 @@ La grabación completa recogía:
 
 ### Análisis Espectral y Categorización
 
-Mediante análisis con Sonic Visualizer identifiqué visualmente los eventos sonoros, denominándolos **"nodos"**, y los numeré según la altura de sus picos en el espectro:
+Mediante análisis con Sonic Visualiser identifiqué visualmente los eventos sonoros, denominándolos **"nodos"**, y los numeré según la altura de sus picos en el espectro:
 - **Nodo nº1**: Pico con material espectral más agudo
 - **Nodo nº23**: Pico con material espectral más grave
 - **Mesetas y mínimos**: Marcados para comprender la estructura

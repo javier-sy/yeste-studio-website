@@ -8,7 +8,7 @@ image: /images/software.png
 
 # MusaDSL
 
-MusaDSL es un lenguaje de dominio específico de código abierto basado en Ruby, diseñado para la composición sonora y musical algorítmica. Nació en el estudio para componer: cada obra ha pedido capacidades que el lenguaje no tenía, y el lenguaje, al ganarlas, ha abierto caminos que antes no estaban a la vista.
+MusaDSL es un lenguaje de dominio específico de código abierto basado en Ruby, diseñado para la composición sonora y musical algorítmica. Nació en yeste.studio para componer: cada obra ha pedido capacidades que el lenguaje no tenía, y el lenguaje, al ganarlas, ha abierto caminos que antes no estaban a la vista.
 
 MusaDSL separa la lógica compositiva del renderizado de audio, permitiendo crear estructuras musicales complejas de forma independiente a los sintetizadores o DAWs utilizados. Esta arquitectura facilita la exploración de sistemas generativos, la composición algorítmica y el live coding.
 
@@ -46,7 +46,7 @@ Licencia **GPL 3.0 o posterior**; licencia comercial disponible ([contactar](/co
 
 Nota es un plugin para [Claude Code](https://claude.ai/code) y [opencode](https://opencode.ai) que transforma la IA en un asistente de composición algorítmica con conocimiento profundo de MusaDSL. Permite preguntar sobre el framework en lenguaje natural (`/nota:explain`), generar ideas compositivas (`/nota:think`), escribir código verificado a partir de intenciones musicales (`/nota:code`), y analizar las propias obras (`/nota:analyze`). En Claude Code se invocan mediante slash commands; en opencode las skills se activan automáticamente por contexto.
 
-Nota incorpora una base de conocimiento semántica que cubre toda la documentación, la referencia de API y más de 20 proyectos de demostración. A medida que el compositor indexa sus obras (`/nota:index`) y extrae buenas prácticas (`/nota:best-practices`), el asistente se enriquece con ese conocimiento personal. Cada paso alimenta al siguiente, formando un ciclo creativo continuo.
+Nota incorpora una base de conocimiento semántica que cubre toda la documentación, la referencia de API y los proyectos de demostración. A medida que el compositor indexa sus obras (`/nota:index`) y extrae buenas prácticas (`/nota:best-practices`), el asistente se enriquece con ese conocimiento personal. Cada paso alimenta al siguiente, formando un ciclo creativo continuo.
 
 **Gratuito**, con licencia propietaria: se licencia para usarlo, no para copiarlo, modificarlo ni redistribuirlo. Lo que compongas con él es tuyo, sin condición por parte de Nota; el código que use MusaDSL sigue la licencia de MusaDSL, como cualquier otro. Licencia comercial disponible ([contactar](/contact)).
 

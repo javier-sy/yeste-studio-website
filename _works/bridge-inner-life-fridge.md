@@ -10,4 +10,4 @@ image_file: "/images/works/bridge-inner-life-fridge.jpg"
 order: 10
 ---
 
-The inner life of fridge.
+The inner life of a fridge.

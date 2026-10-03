@@ -15,7 +15,7 @@ techniques:
 order: 2
 ---
 
-Stereo binuaural reduction of the original work for 16 channels premiered in _Universidad del País Vasco_ (2022-11-23).
+Stereo binaural reduction of the original work for 16 channels premiered in _Universidad del País Vasco_ (2022-11-23).
 
 Composed with [MusaDSL](https://musadsl.yeste.studio). Rendered with Spitfire BBC Symphonic Orchestra on Bitwig Studio and processed with Max/MSP.
 

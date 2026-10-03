@@ -2,7 +2,7 @@
 # Site Settings
 title: yeste.studio
 author: yeste.studio
-description: 'yeste.studio - studio, lab & workshop for research and creation in sound and music: works, tools, teaching.'
+description: 'yeste.studio - studio lab & workshop for research and creation in sound and music: works, tools, teaching.'
 
 #-------------------------------
 # Menu Settings
@@ -53,11 +53,11 @@ social:
 #- {icon: "logo-dribbble", color: "#ea4c89", label: Dribbble, link: "https://dribbble.com"}
 #- {icon: "logo-instagram", color: "#e4405f", label: Instagram, link: "https://instagram.com"}
 #- {icon: "logo-vimeo", color: "#1393cd", label: Vimeo, link: "https://vimeo.com"}
-- {icon: "logo-github", color: "#24292e", label: Github, link: "https://github.com/javier-sy"}
-- {icon: "logo-soundcloud", color: "#1393cd", label: Soundcloud, link: "https://soundcloud.com/yeste-studio"}
+- {icon: "logo-github", color: "#24292e", label: GitHub, link: "https://github.com/javier-sy"}
+- {icon: "logo-soundcloud", color: "#1393cd", label: SoundCloud, link: "https://soundcloud.com/yeste-studio"}
 # - {icon: "logo-youtube", color: "#c4302b", label: Youtube, link: "https://youtube.com/yeste-studio"}
 
-# Example of adding a new link to the footer section - {icon: "logo-github", color: "#24292e, label: Github, link: "https://github.com"}
+# Example of adding a new link to the footer section - {icon: "logo-github", color: "#24292e, label: GitHub, link: "https://github.com"}
 # Other icons can be found at https://ionicons.com/
 
 
