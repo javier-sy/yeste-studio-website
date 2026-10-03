@@ -12,3 +12,12 @@ Here you can find:
 - The *[software](software)* built by yeste.studio and used in its works.
 - The *[doctoral research](phd/thesis)* of the author behind all of it.
 - And *[about](about)* the person behind yeste.studio.
+
+# Latest news
+
+{% include newsletter-form.html id="newsletter-email-top" %}
+
+{% assign latest = site.news | sort: "date" | reverse %}
+{% include news-list.html items=latest limit=3 %}
+
+{% include newsletter-form.html %}

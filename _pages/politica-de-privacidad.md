@@ -168,6 +168,9 @@ Descripción de las categorías de proveedores y de las categorías de datos per
 - Cuando sea posible, los plazos previstos para la supresión de las diferentes categorías de datos:
     - Los previstos por la legislación fiscal respecto a la prescripción de responsabilidades.
 --->
+
+{% include newsletter-privacy.md %}
+
 # Derechos de los usuarios
 
 Cualquier persona tiene derecho a obtener confirmación sobre si [yeste.studio](https://yeste.studio)

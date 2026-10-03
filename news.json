@@ -1,0 +1,14 @@
+---
+layout: null
+sitemap: false
+---
+{%- comment -%}
+Every news item, newest first, for the product sites' News sections: their Pages workflow fetches
+this file before building (../yeste-studio-theme/docs/news.md has the contract).
+{%- endcomment -%}
+{%- assign items = site.news | sort: "date" | reverse -%}
+[
+{%- for item in items %}
+  {"title": {{ item.title | jsonify }}, "date": "{{ item.date | date: '%Y-%m-%d' }}", "url": {{ item.url | absolute_url | jsonify }}, "topics": {{ item.topics | jsonify }}, "summary": {{ item.summary | jsonify }}, "lang": {{ item.lang | default: "es" | jsonify }}}{% unless forloop.last %},{% endunless %}
+{%- endfor %}
+]

@@ -38,6 +38,8 @@ in this repo; check before duplicating.
 - `_pages/` - Main content pages (Markdown)
 - `_phd_music/` - Jekyll collection for PhD compositions (output to `/phd/materials/:title/`)
 - `_events/` - Jekyll collection of dated appearances, rendered by `shows.md` and `teaching.md` (no pages of their own)
+- `_news/` - Jekyll collection of news items, published under `/news/` (see News and Newsletter)
+- `_letters/` - Jekyll collection of the newsletter's letters, published under `/news/letters/`
 - `_layouts/` - HTML templates (`works.html` and `music.html` include WaveSurfer.js players)
 - `_includes/` - Reusable components (`wavesurfer-player.html` for inline audio players)
 - `_sass/` - ITCSS-structured stylesheets (0-settings, 1-tools, 2-base, 3-modules, 4-layouts)
@@ -45,6 +47,7 @@ in this repo; check before duplicating.
 - `_data/cookies.yml` - Cookie register: feeds the cookie policy's table and the consent version
 - `audio/` - MP3 files (works/, phd/)
 - `_plugins/soundcloud-plugin.rb` - Custom `{% soundcloud ID %}` Liquid tag
+- `_plugins/news.rb` - Checks news topics and dates, generates the topic pages and feeds, and each letter's `email.txt`
 
 ### Audio Player System
 
@@ -101,6 +104,27 @@ activities:
     text: |
 ```
 
+### News and Newsletter
+
+News are written once here and shown on every yeste.studio site; the contract, the files and how
+to turn the newsletter on are in `../yeste-studio-theme/docs/news.md`.
+
+```yaml
+# _news/2026-09-20-musadsl-1-0.md
+title: "MusaDSL 1.0"
+date: 2026-09-20           # stated here, not only in the file name: the build checks it
+topics: [musadsl, musalce] # keys of _data/topics.yml; any other fails the build
+summary: "One line for the lists and the product sites."
+lang: en                   # only when the item is not in Spanish
+```
+
+The build publishes `/news/`, `/news/<topic>/` with its feed, `/feed.xml` (news and letters) and
+`news.json`, which the product sites fetch at build time. A letter (`_letters/`) is Javier's text
+plus the news it lists in `news:` (`item: <slug>`, optional `text`); in letters Javier writes in
+the first person, as yeste.studio. `_data/topics.yml`, `_data/newsletter.yml`, `news-list.html`,
+`newsletter-form.html`, `newsletter-privacy.md` and `_sass/3-modules/_news.scss` are copies of the
+theme's, refreshed by `../yeste-studio-theme/scripts/sync-news.sh`: edit them in the theme.
+
 ### Brand Assets
 
 `_includes/brand/lockup.svg` (the header) and the favicon set at the site root are generated
@@ -137,5 +161,5 @@ Automated via GitHub Actions (`.github/workflows/github-pages.yml`). Push to `ma
 ## Content Guidelines
 
 - Audio files: MP3 format, 320kbps quality
-- Site language: Mixed Spanish/English (Spanish for legal pages, PhD thesis; English for works, bio)
+- Site language: Mixed Spanish/English (Spanish for legal pages, PhD thesis, news and letters; English for works, bio and the interface)
 - MusaDSL documentation lives at external site musadsl.yeste.studio

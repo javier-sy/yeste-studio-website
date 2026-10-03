@@ -1,0 +1,18 @@
+---
+layout: page
+---
+{%- comment -%}One news item from _news/: date and topics under the title, then the text.{%- endcomment -%}
+<p class="meta" lang="en">
+  <time datetime="{{ page.date | date: '%Y-%m-%d' }}">{{ page.date | date: "%d-%m-%Y" }}</time>
+  {%- for key in page.topics %}{% assign topic = site.data.topics | where: "key", key | first %}
+  · <a href="/news/{{ key }}/">{{ topic.label }}</a>
+  {%- endfor %}
+</p>
+
+<div lang="{{ page.lang | default: 'es' }}">
+{{ content }}
+</div>
+
+<p class="news-page__more" lang="en"><a href="/news/">All news</a></p>
+
+{% include newsletter-form.html %}

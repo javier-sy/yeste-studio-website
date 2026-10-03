@@ -1,0 +1,32 @@
+---
+layout: page
+---
+{%- comment -%}
+One letter of yeste.studio news, from _letters/: the text, then the news it brings, each with the
+letter's own lines (`text`) or, without them, the news item's summary. _plugins/news.rb writes the
+same letter as email.txt beside this page.
+{%- endcomment -%}
+<p class="meta" lang="en"><time datetime="{{ page.date | date: '%Y-%m-%d' }}">{{ page.date | date: "%d-%m-%Y" }}</time> · {{ site.data.newsletter.name }}</p>
+
+<div lang="{{ page.lang | default: 'es' }}">
+{{ content }}
+</div>
+
+{%- if page.news.size > 0 %}
+<ul class="news-list list-reset">
+  {%- for entry in page.news %}
+  {%- assign item = site.news | where: "slug", entry.item | first %}
+  <li class="news-list__item" lang="{{ item.lang | default: 'es' }}">
+    <time class="news-list__date" datetime="{{ item.date | date: '%Y-%m-%d' }}">{{ item.date | date: "%d-%m-%Y" }}</time>
+    <div class="news-list__body">
+      <a class="news-list__title" href="{{ item.url }}">{{ item.title }}</a>
+      <p class="news-list__summary">{{ entry.text | default: item.summary }}</p>
+    </div>
+  </li>
+  {%- endfor %}
+</ul>
+{%- endif %}
+
+<p class="news-page__more" lang="en"><a href="/news/letters/">All letters</a> · <a href="/news/">All news</a></p>
+
+{% include newsletter-form.html %}

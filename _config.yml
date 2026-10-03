@@ -10,11 +10,7 @@ url: "https://yeste.studio" # the base hostname & protocol for your site, e.g. h
 markdown: kramdown
 permalink: /:title
 plugins:
-  - jekyll-paginate
   - jekyll-sitemap
-
-paginate: 9
-paginate_path: "/blog/page/:num"
 
 # Pages Path
 defaults:
@@ -23,9 +19,13 @@ defaults:
     values:
       permalink: /:basename:output_ext
   - scope:
-      path: '_posts'
+      type: news
     values:
-      permalink: /blog/:slug
+      layout: news
+  - scope:
+      type: letters
+    values:
+      layout: letter
 
 include:
   - _pages
@@ -43,6 +43,12 @@ collections:
     permalink: /phd/materials/:title/
   events:
     output: false
+  news:
+    output: true
+    permalink: /news/:year/:slug/
+  letters:
+    output: true
+    permalink: /news/letters/:slug/
 
 sass:
   sass_dir: _sass
