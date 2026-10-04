@@ -14,5 +14,3 @@ permalink: news/letters/
 {%- endif %}
 
 <p class="news-page__more"><a href="/news/">All news</a></p>
-
-{% include newsletter-form.html %}

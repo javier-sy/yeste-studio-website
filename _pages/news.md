@@ -14,10 +14,8 @@ permalink: news/
   {%- endfor %}
 </p>
 
-{% include newsletter-form.html id="newsletter-email-top" %}
+{% include newsletter-form.html placement="top" %}
 
 {% include news-list.html items=items topics=true %}
 
 <p class="news-page__more"><a href="/feed.xml">RSS</a>{% if letters.size > 0 %} · <a href="/news/letters/">Letters</a>{% endif %}</p>
-
-{% include newsletter-form.html %}
